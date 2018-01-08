@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#iType</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>1</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iArg</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>1</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sQuestID</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>Store</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+</ArrayOfTableExplain>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#sGroupID</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iScore2</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>#iRID</Column>
+		<Text />
+		<Explain />
+		<Width>745</Width>
+		<Height>42</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sTalk</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iAmount</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+</ArrayOfTableExplain>

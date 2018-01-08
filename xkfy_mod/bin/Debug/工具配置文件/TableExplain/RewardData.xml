@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#iRID</Column>
+		<Text>奖励编号</Text>
+		<Explain>奖励编号</Explain>
+		<IsSelColumn>1</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sRewardData</Column>
+		<Explain>奖励内容；格式为（a，b，c，d），每种奖励之间用*连接。a：奖励大类，b：大类中的分类，c：对应前两项数值，d：提示语句（string_table.txt)。a=1面板属性、4生活技能、5技艺、6好感度、7获得物品、13称号、14钱、18经历、19增加技能、20触发动画？？、21触发场景对话？？、24招式经验、27攻击力、28防御力、30触发小游戏？？、31进入养成模式？？、32基本功经验、33？？、34？？、35触发结局？？、36更换主角头像？？、37返回主菜单？、38开启前传章节？、39？？、40队友入队？、41？？a：奖励大类，1面板属性、4生活技能、5技艺、6好感度、7获得物品、13称号、14钱、18经历、19增加技能、20触发动画？？、21触发场景对话？？、24招式经验、27攻击力、28防御力、30触发小游戏？？、31进入养成模式？？、32基本功经验、33？？、34？？、35触发结局？？、36更换主角头像？？、37返回主菜单？、38开启前传章节？、39？？、40队友入队？、41？？a：奖励大类，1面板属性、4生活技能、5技艺、6好感度、7获得物品、13称号、14钱、18经历、19增加技能、20触发动画？？、21触发场景对话？？、24招式经验、27攻击力、28防御力、30触发小游戏？？、31进入养成模式？？、32基本功经验、33？？、34？？、35触发结局？？、36更换主角头像？？、37返回主菜单？、38开启前传章节？、39？？、40队友入队？、41？？</Explain>
+		<IsSelColumn>1</IsSelColumn>
+		<Width>745</Width>
+		<Height>63</Height>
+	</TableExplain>
+</ArrayOfTableExplain>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#sGroupID$0</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sQuestion$1</Column>
+		<Text />
+		<Explain />
+		<Width>745</Width>
+		<Height>42</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sBtnName1$2</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iCorrectButton$3</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sBtnName2$4</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iCorrectButton$5</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sBtnName3$6</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iCorrectButton$7</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sBtnName4$8</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iCorrectButton$9</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+</ArrayOfTableExplain>

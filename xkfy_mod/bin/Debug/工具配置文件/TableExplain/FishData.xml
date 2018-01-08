@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#sAbilityBook</Column>
+		<Text>技艺编号</Text>
+		<Explain>技艺编号</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strStart</Column>
+		<Text>初始力量范围</Text>
+		<Explain>初始力量范围</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iBaitType</Column>
+		<Text>鱼饵类型</Text>
+		<Explain>鱼饵类型</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iPhysical</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sPauseTime</Column>
+		<Text>挣扎次数范围</Text>
+		<Explain>挣扎次数范围</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iRunSec</Column>
+		<Text>逃跑时间</Text>
+		<Explain>逃跑时间</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iGift</Column>
+		<Text>奖励物品编号</Text>
+		<Explain>奖励物品编号</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sImage</Column>
+		<Text>图像</Text>
+		<Explain>图像</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+</ArrayOfTableExplain>

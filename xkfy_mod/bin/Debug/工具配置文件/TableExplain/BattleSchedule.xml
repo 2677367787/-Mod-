@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#iArea</Column>
+		<Text>战斗ID</Text>
+		<Explain />
+		<IsSelColumn>1</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iClipID</Column>
+		<Text>执行顺序</Text>
+		<Explain />
+		<IsSelColumn>0</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>bStart</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>0</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iNextClipID</Column>
+		<Text>下次执行</Text>
+		<Explain>执行顺序ID</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iLinkID</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>TriggerType</Column>
+		<Text />
+		<Explain>=6 加入战斗人员 =5角色死亡触发 =1 角色行动后触发</Explain>
+		<IsSelColumn>1</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>TriggerData</Column>
+		<Explain>TriggerType=6 代表加入的回合 TriggerType=5哪个角色死亡 TriggerType=1哪个角色行动后</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>RequireType</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>RequireEqual</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iRequireValue1</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iRequireValue2</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iTriggerPercent</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>TriggerEvent</Column>
+		<Explain>=4 附加状态</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iTriggerEventArg1</Column>
+		<Explain>战斗模型ID</Explain>
+		<IsSelColumn>1</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iTriggerEventArg2</Column>
+		<Explain>0队友，1敌对，2中立</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iTriggerEventArg3</Column>
+		<Explain>出场位置</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iGroup</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>irepeat</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+</ArrayOfTableExplain>

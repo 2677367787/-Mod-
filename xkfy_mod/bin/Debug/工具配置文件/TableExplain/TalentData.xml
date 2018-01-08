@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#iTalenID</Column>
+		<Text>ID</Text>
+		<Explain />
+		<IsSelColumn>0</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+		<IsDropDownList>0</IsDropDownList>
+	</TableExplain>
+	<TableExplain>
+		<Column>iTalenType</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>0</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+		<IsDropDownList>0</IsDropDownList>
+	</TableExplain>
+	<TableExplain>
+		<Column>sOpenCondition</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>0</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+		<IsDropDownList>0</IsDropDownList>
+	</TableExplain>
+	<TableExplain>
+		<Column>sTalenName</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>0</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+		<IsDropDownList>0</IsDropDownList>
+	</TableExplain>
+	<TableExplain>
+		<Column>sTalenTip</Column>
+		<Text />
+		<Explain>鼠标移动到天赋文字上显示的信息</Explain>
+		<IsSelColumn>0</IsSelColumn>
+		<Width>745</Width>
+		<Height>42</Height>
+		<IsDropDownList>0</IsDropDownList>
+	</TableExplain>
+</ArrayOfTableExplain>

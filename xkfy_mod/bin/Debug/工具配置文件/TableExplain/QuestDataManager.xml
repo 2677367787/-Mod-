@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#sID</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>1</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sQuestName</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>1</IsSelColumn>
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iQType</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sQTip</Column>
+		<Text />
+		<Explain />
+		<Width>745</Width>
+		<Height>42</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iOpenTime</Column>
+		<Text>开放时间</Text>
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iCloseTime</Column>
+		<Text>关闭时间</Text>
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sOConditions</Column>
+		<Text>触发条件</Text>
+		<Explain />
+		<Width>745</Width>
+		<Height>63</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sFinshQType</Column>
+		<Text>完成条件</Text>
+		<Explain />
+		<Width>745</Width>
+		<Height>63</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iGetManager</Column>
+		<Text>剧情开始</Text>
+		<Explain>开始剧情对话</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iQuestIngManager</Column>
+		<Text>剧情发展</Text>
+		<Explain>剧情发展对话</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iFinshQuestManager</Column>
+		<Text>剧情结束</Text>
+		<Explain>剧情发展对话</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iGiftID1</Column>
+		<Text>奖励RewardData</Text>
+		<Explain>奖励ID 关联到 RewardData.txt 文件查询</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iRepeat</Column>
+		<Text>是否重复</Text>
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+</ArrayOfTableExplain>

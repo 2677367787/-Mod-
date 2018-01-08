@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAppConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<AppConfig>
+		<CreatePath>修改后的文件</CreatePath>
+		<GameInstallPath>D:\Test2</GameInstallPath>
+	</AppConfig>
+</ArrayOfAppConfig>

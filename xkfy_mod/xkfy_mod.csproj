@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CE04A019-0B65-4597-90AB-50441235D961}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>xkfy_mod</RootNamespace>
+    <AssemblyName>xkfy_mod</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cx.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.9.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>CommonDll\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\BasicList.cs" />
+    <Compile Include="Entity\LinkageDdl.cs" />
+    <Compile Include="Personality\BattleConditionEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personality\BattleConditionEdit.Designer.cs">
+      <DependentUpon>BattleConditionEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Const.cs" />
+    <Compile Include="Entity\Annotation.cs" />
+    <Compile Include="Entity\ChooseData.cs" />
+    <Compile Include="Entity\RowFormat.cs" />
+    <Compile Include="Entity\FormData.cs" />
+    <Compile Include="Entity\GetValueRows.cs" />
+    <Compile Include="FrmAnnotation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnnotation.Designer.cs">
+      <DependentUpon>FrmAnnotation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personality\BattleAreaDataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personality\BattleAreaDataEdit.Designer.cs">
+      <DependentUpon>BattleAreaDataEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\AppConfig.cs" />
+    <Compile Include="Entity\EventData.cs" />
+    <Compile Include="Helper\ControlHelper.cs" />
+    <Compile Include="Helper\FileHelper.cs" />
+    <Compile Include="Helper\PathHelper.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserContrl\AnnotationCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserContrl\AnnotationCtrl.Designer.cs">
+      <DependentUpon>AnnotationCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ControlUtils.cs" />
+    <Compile Include="Utils\FileUtils.cs" />
+    <Compile Include="EventChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventChart.Designer.cs">
+      <DependentUpon>EventChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRound.Designer.cs">
+      <DependentUpon>FrmRound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTbConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTbConfig.Designer.cs">
+      <DependentUpon>FrmTbConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personality\AddNeiGong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personality\AddNeiGong.Designer.cs">
+      <DependentUpon>AddNeiGong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Almighty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Almighty.Designer.cs">
+      <DependentUpon>Almighty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlmightyEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlmightyEdit.Designer.cs">
+      <DependentUpon>AlmightyEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttributeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttributeList.Designer.cs">
+      <DependentUpon>AttributeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personality\BattleAbilityEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personality\BattleAbilityEdit.Designer.cs">
+      <DependentUpon>BattleAbilityEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\DicConfig.cs" />
+    <Compile Include="Entity\LeftMenu.cs" />
+    <Compile Include="Entity\ModConfig.cs" />
+    <Compile Include="Entity\SelectItem.cs" />
+    <Compile Include="Entity\MyConfig.cs" />
+    <Compile Include="Entity\TableExplain.cs" />
+    <Compile Include="Helper\DataHelper.cs" />
+    <Compile Include="Helper\ExplainHelper.cs" />
+    <Compile Include="Helper\ToolsHelper.cs" />
+    <Compile Include="Personality\DevelopQuestDataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personality\DevelopQuestDataEdit.Designer.cs">
+      <DependentUpon>DevelopQuestDataEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dock.Designer.cs">
+      <DependentUpon>Dock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmExplain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmExplain.Designer.cs">
+      <DependentUpon>FrmExplain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personality\ItemDataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personality\ItemDataEdit.Designer.cs">
+      <DependentUpon>ItemDataEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personality\NeigongUpValueEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personality\NeigongUpValueEdit.Designer.cs">
+      <DependentUpon>NeigongUpValueEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RadioList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadioList.Designer.cs">
+      <DependentUpon>RadioList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personality\RewardDataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personality\RewardDataEdit.Designer.cs">
+      <DependentUpon>RewardDataEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personality\RoutineDataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personality\RoutineDataEdit.Designer.cs">
+      <DependentUpon>RoutineDataEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetGamePath.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetGamePath.Designer.cs">
+      <DependentUpon>SetGamePath.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUp\FrmSetCbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUp\FrmSetCbo.Designer.cs">
+      <DependentUpon>FrmSetCbo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetUp\frmSetUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetUp\frmSetUp.Designer.cs">
+      <DependentUpon>frmSetUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TalkDeBug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TalkDeBug.Designer.cs">
+      <DependentUpon>TalkDeBug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personality\TalkManagerEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personality\TalkManagerEdit.Designer.cs">
+      <DependentUpon>TalkManagerEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\StringUtils.cs" />
+    <Compile Include="XML\XmlHelper.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personality\BattleConditionEdit.resx">
+      <DependentUpon>BattleConditionEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnnotation.resx">
+      <DependentUpon>FrmAnnotation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personality\BattleAreaDataEdit.resx">
+      <DependentUpon>BattleAreaDataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventChart.resx">
+      <DependentUpon>EventChart.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRound.resx">
+      <DependentUpon>FrmRound.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTbConfig.resx">
+      <DependentUpon>FrmTbConfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personality\AddNeiGong.resx">
+      <DependentUpon>AddNeiGong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Almighty.resx">
+      <DependentUpon>Almighty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlmightyEdit.resx">
+      <DependentUpon>AlmightyEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttributeList.resx">
+      <DependentUpon>AttributeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personality\BattleAbilityEdit.resx">
+      <DependentUpon>BattleAbilityEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personality\DevelopQuestDataEdit.resx">
+      <DependentUpon>DevelopQuestDataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dock.resx">
+      <DependentUpon>Dock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmExplain.resx">
+      <DependentUpon>FrmExplain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personality\ItemDataEdit.resx">
+      <DependentUpon>ItemDataEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personality\NeigongUpValueEdit.resx">
+      <DependentUpon>NeigongUpValueEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RadioList.resx">
+      <DependentUpon>RadioList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personality\RewardDataEdit.resx">
+      <DependentUpon>RewardDataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personality\RoutineDataEdit.resx">
+      <DependentUpon>RoutineDataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetGamePath.resx">
+      <DependentUpon>SetGamePath.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUp\FrmSetCbo.resx">
+      <DependentUpon>FrmSetCbo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetUp\frmSetUp.resx">
+      <DependentUpon>frmSetUp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TalkDeBug.resx">
+      <DependentUpon>TalkDeBug.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personality\TalkManagerEdit.resx">
+      <DependentUpon>TalkManagerEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserContrl\AnnotationCtrl.resx">
+      <DependentUpon>AnnotationCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\打开1.png" />
+    <None Include="Resources\打开 %281%29.png" />
+    <None Include="Resources\打开.png" />
+    <None Include="Resources\打开工程.png" />
+    <None Include="Resources\重新加载.png" />
+    <None Include="Resources\保存.png" />
+    <None Include="Resources\生成.png" />
+    <None Include="Resources\新建 %281%29.png" />
+    <None Include="Resources\收款.png" />
+    <None Include="Resources\set.png" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="bin\Debug\Images\ico\3.png" />
+    <None Include="bin\Debug\Images\ico\4.png" />
+    <None Include="bin\Debug\Images\ico\5.png" />
+    <None Include="CommonDll\WeifenLuo.WinFormsUI.Docking.dll" />
+    <Content Include="cx.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

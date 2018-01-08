@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#iQGroupID</Column>
+		<Text>事件编号</Text>
+		<Explain>事件编号</Explain>
+		<IsSelColumn>1</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iOrder</Column>
+		<Text>对话序号</Text>
+		<Explain>对话序号</Explain>
+		<IsSelColumn>1</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iNpcID</Column>
+		<Explain>角色编号；主角是0（详见npcdata.txt）</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sManager</Column>
+		<Text>对话内容</Text>
+		<Explain>对话内容</Explain>
+		<IsSelColumn>1</IsSelColumn>
+		<Width>745</Width>
+		<Height>63</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sVoice</Column>
+		<Text>调用npc语音</Text>
+		<Explain>调用npc语音</Explain>
+		<Width>315</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>bInFields</Column>
+		<Explain>是否出现选择内容；1是0否，2不经选择直接转入后续场景对话（目前似乎都是对应技艺修炼剧情，不确定其他可否关联）</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sButtonName1</Column>
+		<Explain>选项一；选择穴道扎针这种游戏时，直接填成功后的对话代码，sbuttonnae2为失败后的对话代码</Explain>
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iButtonType1</Column>
+		<Explain>触发类型；1转入对话、2进入选择回答面板、3切换场景对话或战斗；binfields=2时，转入的场景对话代码，ibuttontype2填对应的技艺修炼代码（developbtndata.txt）</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sBArg1</Column>
+		<Explain>选择后跳转的对话代码</Explain>
+		<Width>745</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sButtonName2</Column>
+		<Explain>选项二；选择穴道扎针这种游戏时，直接填成功后的对话代码，sbuttonnae2为失败后的对话代码</Explain>
+		<Width>315</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iButtonType2</Column>
+		<Explain>触发类型；1转入对话、2进入选择回答面板、3切换场景对话或战斗；binfields=2时，转入的场景对话代码，ibuttontype2填对应的技艺修炼代码（developbtndata.txt）</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sBArg2</Column>
+		<Explain>选择后跳转的对话代码</Explain>
+		<Width>745</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sButtonName3</Column>
+		<Explain>选项三；选择穴道扎针这种游戏时，直接填成功后的对话代码，sbuttonnae2为失败后的对话代码</Explain>
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iButtonType3</Column>
+		<Explain>触发类型；1转入对话、2进入选择回答面板、3切换场景对话或战斗；binfields=2时，转入的场景对话代码，ibuttontype2填对应的技艺修炼代码（developbtndata.txt）</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sBArg3</Column>
+		<Explain>选择后跳转的对话代码</Explain>
+		<Width>745</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sButtonName4</Column>
+		<Explain>选项四；选择穴道扎针这种游戏时，直接填成功后的对话代码，sbuttonnae2为失败后的对话代码</Explain>
+		<Width>315</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iButtonType4</Column>
+		<Explain>触发类型；1转入对话、2进入选择回答面板、3切换场景对话或战斗；binfields=2时，转入的场景对话代码，ibuttontype2填对应的技艺修炼代码（developbtndata.txt）</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sBArg4</Column>
+		<Explain>选择后跳转的对话代码</Explain>
+		<Width>745</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iGType1</Column>
+		<Explain>奖励类型；1面板属性（名声道德等）、2基本功（轻功等）、3武艺、4技能、5技艺、6好感度、7物品、13称号、14钱、15所有人好感？？？、16获得招式、17获得内功、18经历、19增加技能、20触发过场动画（特殊地图）、22体力、23内力？？、24招式经验、26心情、29钱（随机数？）、30触发小游戏、31进入养成模式、32基本功经验、34开启新功能、35触发结局、36更换主角头像、37回主菜单、38开启前传章节、40队友入队</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sGArg1</Column>
+		<Explain>奖励细项；igtype=1：0实战、1武学、2道德、3名声、4悟性、5气血、6内力，=2：0眼功、1耳功、2硬功、3软功、4轻功、5内功，=3：0拳法、1指法、2腿法、3剑法、4刀法、5棍法、6短柄、7暗器、8琴，=4：0挖矿、1打猎、2钓鱼、3采药、4炼丹、5打铁、6鉴定、8厨艺，=5：技艺代码，0音律、1棋、2毒、3医、4画、5字、6酒、7花、8茶，=6：角色编码npcdata.txt，=7：物品编码itemdata.txt，=13：称号编码titledata.txt，=17：内功代码（battleneigong.txt），=18：经历journeydata.txt，=19：招式编码（abilitybook.txt）=24：0拳法、1指法、2腿法、3剑法、4刀法、5棍法、6短柄、7暗器、8琴，=30：0挖矿、1打猎、2钓鱼、3采药、4炼丹、5打铁、6鉴定、8厨艺，=34：功能代码（developebtndata.txt)</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iAmount1</Column>
+		<Text>奖励细项的数值</Text>
+		<Explain>奖励细项的数值</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sStringID1</Column>
+		<Text>屏幕提示语句（string_table.txt)</Text>
+		<Explain>屏幕提示语句（string_table.txt)</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iGType2</Column>
+		<Explain>奖励类型；1面板属性（名声道德等）、2基本功（轻功等）、3武艺、4技能、5技艺、6好感度、7物品、13称号、14钱、15所有人好感？？？、16获得招式、17获得内功、18经历、19增加技能、20触发过场动画（特殊地图）、22体力、23内力？？、24招式经验、26心情、29钱（随机数？）、30触发小游戏、31进入养成模式、32基本功经验、34开启新功能、35触发结局、36更换主角头像、37回主菜单、38开启前传章节、40队友入队</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sGArg2</Column>
+		<Explain>奖励细项；igtype=1：0实战、1武学、2道德、3名声、4悟性、5气血、6内力，=2：0眼功、1耳功、2硬功、3软功、4轻功、5内功，=3：0拳法、1指法、2腿法、3剑法、4刀法、5棍法、6短柄、7暗器、8琴，=4：0挖矿、1打猎、2钓鱼、3采药、4炼丹、5打铁、6鉴定、8厨艺，=5：技艺代码，0音律、1棋、2毒、3医、4画、5字、6酒、7花、8茶，=6：角色编码npcdata.txt，=7：物品编码itemdata.txt，=13：称号编码titledata.txt，=17：内功代码（battleneigong.txt），=18：经历journeydata.txt，=19：招式编码（abilitybook.txt）=24：0拳法、1指法、2腿法、3剑法、4刀法、5棍法、6短柄、7暗器、8琴，=30：0挖矿、1打猎、2钓鱼、3采药、4炼丹、5打铁、6鉴定、8厨艺，=34：功能代码（developebtndata.txt)</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iAmount2</Column>
+		<Text>奖励细项的数值</Text>
+		<Explain>奖励细项的数值</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sStringID2</Column>
+		<Text>屏幕提示语句（string_table.txt)</Text>
+		<Explain>屏幕提示语句（string_table.txt)</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iGType3</Column>
+		<Explain>奖励类型；1面板属性（名声道德等）、2基本功（轻功等）、3武艺、4技能、5技艺、6好感度、7物品、13称号、14钱、15所有人好感？？？、16获得招式、17获得内功、18经历、19增加技能、20触发过场动画（特殊地图）、22体力、23内力？？、24招式经验、26心情、29钱（随机数？）、30触发小游戏、31进入养成模式、32基本功经验、34开启新功能、35触发结局、36更换主角头像、37回主菜单、38开启前传章节、40队友入队</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sGArg3</Column>
+		<Explain>奖励细项；igtype=1：0实战、1武学、2道德、3名声、4悟性、5气血、6内力，=2：0眼功、1耳功、2硬功、3软功、4轻功、5内功，=3：0拳法、1指法、2腿法、3剑法、4刀法、5棍法、6短柄、7暗器、8琴，=4：0挖矿、1打猎、2钓鱼、3采药、4炼丹、5打铁、6鉴定、8厨艺，=5：技艺代码，0音律、1棋、2毒、3医、4画、5字、6酒、7花、8茶，=6：角色编码npcdata.txt，=7：物品编码itemdata.txt，=13：称号编码titledata.txt，=17：内功代码（battleneigong.txt），=18：经历journeydata.txt，=19：招式编码（abilitybook.txt）=24：0拳法、1指法、2腿法、3剑法、4刀法、5棍法、6短柄、7暗器、8琴，=30：0挖矿、1打猎、2钓鱼、3采药、4炼丹、5打铁、6鉴定、8厨艺，=34：功能代码（developebtndata.txt)</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iAmount3</Column>
+		<Text>奖励细项的数值</Text>
+		<Explain>奖励细项的数值</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sStringID3</Column>
+		<Text>屏幕提示语句（string_table.txt)</Text>
+		<Explain>屏幕提示语句（string_table.txt)</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sImage</Column>
+		<Text>插图</Text>
+		<Explain>插图</Explain>
+		<Width>315</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sEndMovie</Column>
+		<Explain>结束画面：1是那个鸟飞过的图像，0没有</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iMasgPlace</Column>
+		<Text>对话框位置</Text>
+		<Explain>对话框位置</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sNpcQName1</Column>
+		<Explain>共8个，调用2D人物画像，人物代码_序号的格式，不同的snpcname*是画面上不同位置</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iDirectionSet1</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sMood1</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iAniLoop1</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sNpcQName2</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iDirectionSet2</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sMood2</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iAniLoop2</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sNpcQName3</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iDirectionSet3</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sMood3</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iAniLoop3</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sNpcQName4</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iDirectionSet4</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sMood4</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iAniLoop4</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sNpcQName5</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iDirectionSet5</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sMood5</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iAniLoop5</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sNpcQName6</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iDirectionSet6</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sMood6</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iAniLoop6</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sNpcQName7</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iDirectionSet7</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sMood7</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iAniLoop7</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sNpcQName8</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iDirectionSet8</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sMood8</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iAniLoop8</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>iPromptString</Column>
+		<Text>（string_table.txt)</Text>
+		<Explain>（string_table.txt)</Explain>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+</ArrayOfTableExplain>

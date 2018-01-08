@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfSelectItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!--面板属性-->
+    <SelectItem>
+        <Type>MianBan</Type>
+        <ChildType>MianBan</ChildType>
+        <Text>实战</Text>
+        <Value>0</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>MianBan</Type>
+        <ChildType>MianBan</ChildType>
+        <Text>武学</Text>
+        <Value>1</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>MianBan</Type>
+        <ChildType>MianBan</ChildType>
+        <Text>道德</Text>
+        <Value>2</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>MianBan</Type>
+        <ChildType>MianBan</ChildType>
+        <Text>名声</Text>
+        <Value>3</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>MianBan</Type>
+        <ChildType>MianBan</ChildType>
+        <Text>悟性</Text>
+        <Value>4</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>MianBan</Type>
+        <ChildType>MianBan</ChildType>
+        <Text>气血</Text>
+        <Value>5</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>MianBan</Type>
+        <ChildType>MianBan</ChildType>
+        <Text>内力</Text>
+        <Value>6</Value>
+    </SelectItem>
+</ArrayOfSelectItem>

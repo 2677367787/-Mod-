@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#iType</Column>
+		<Text />
+		<Explain />
+	</TableExplain>
+	<TableExplain>
+		<Column>iID</Column>
+		<Text />
+		<Explain />
+	</TableExplain>
+	<TableExplain>
+		<Column>sAchName</Column>
+		<Text />
+		<Explain />
+	</TableExplain>
+	<TableExplain>
+		<Column>sAchExplain</Column>
+		<Text />
+		<Explain />
+	</TableExplain>
+	<TableExplain>
+		<Column>sUIImage</Column>
+		<Text />
+		<Explain />
+	</TableExplain>
+	<TableExplain>
+		<Column>sReachCondition</Column>
+		<Text />
+		<Explain />
+	</TableExplain>
+	<TableExplain>
+		<Column>sRanDomCondition</Column>
+		<Text />
+		<Explain />
+	</TableExplain>
+</ArrayOfTableExplain>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfSelectItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <SelectItem>
+        <Type>Accumulate</Type>
+        <ChildType>Accumulate</ChildType>
+        <Text>数值型自身</Text>
+        <Value>0</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>Accumulate</Type>
+        <ChildType>Accumulate</ChildType>
+        <Text>积累型自身</Text>
+        <Value>1</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>Accumulate</Type>
+        <ChildType>Accumulate</ChildType>
+        <Text>效果型自身</Text>
+        <Value>4</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>Accumulate</Type>
+        <ChildType>Accumulate</ChildType>
+        <Text>周围友军</Text>
+        <Value>5</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>Accumulate</Type>
+        <ChildType>Accumulate</ChildType>
+        <Text>该动作触发</Text>
+        <Value>7</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>Accumulate</Type>
+        <ChildType>Accumulate</ChildType>
+        <Text>周围敌军</Text>
+        <Value>9</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>Accumulate</Type>
+        <ChildType>Accumulate</ChildType>
+        <Text>高或低于某值触发</Text>
+        <Value>10</Value>
+    </SelectItem>
+</ArrayOfSelectItem>

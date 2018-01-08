@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#iID</Column>
+		<Text>消息编号</Text>
+		<Explain>消息编号</Explain>
+		<IsSelColumn>1</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>xUse</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>sString</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>1</IsSelColumn>
+		<Width>745</Width>
+		<Height>63</Height>
+	</TableExplain>
+</ArrayOfTableExplain>

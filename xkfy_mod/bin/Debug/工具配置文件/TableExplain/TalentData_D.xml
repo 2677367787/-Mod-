@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#iTalenID</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>0</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+    	<TableExplain>
+		<Column>iType</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>0</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+    	<TableExplain>
+		<Column>iBuffer</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>0</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+    	<TableExplain>
+		<Column>iValue</Column>
+		<Text />
+		<Explain />
+		<IsSelColumn>0</IsSelColumn>
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+</ArrayOfTableExplain>

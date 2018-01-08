@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfDicConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <DicConfig>
+        <Key>BattleNeigong.Accumulate</Key>
+        <Value>BattleNeigong.Accumulate.作用方式.xml</Value>
+    </DicConfig>
+    <DicConfig>
+        <Key>BattleNeigong.Effecttype</Key>
+        <Value>BattleNeigong.Effecttype.效果类型.xml</Value>
+    </DicConfig>
+    <DicConfig>
+        <Key>BattleCondition.Accumulate</Key>
+        <Value>BattleCondition.Accumulate.作用方式.xml</Value>
+    </DicConfig>
+    <DicConfig>
+        <Key>BattleCondition.Effecttype</Key>
+        <Value>BattleCondition.Effecttype.效果类型.xml</Value>
+    </DicConfig>
+    <DicConfig>
+        <Key>Public.iWearAmsType</Key>
+        <Value>iWearAmsType.公用.武器类型.xml</Value>
+    </DicConfig>
+    <DicConfig>
+        <Key>ItemData.iRecover</Key>
+        <Value>ItemData.iRecover.xml</Value>
+    </DicConfig>
+    <DicConfig>
+        <Key>DevelopQuestData.iType</Key>
+        <Value>DevelopQuestData.iType.触发类型.xml</Value>
+    </DicConfig>
+    <DicConfig>
+        <Key>DevelopQuestData.iCondition</Key>
+        <Value>DevelopQuestData.iCondition.触发条件.xml</Value>
+    </DicConfig>
+    <DicConfig>
+        <Key>Public.HuiHe</Key>
+        <Value>Public.HuiHe.xml</Value>
+    </DicConfig>
+</ArrayOfDicConfig>

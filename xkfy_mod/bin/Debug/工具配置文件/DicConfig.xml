@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDicConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!--面板属性-->
+    <DicConfig>
+        <Key>MB</Key>
+        <Value>MianBan.xml</Value>
+    </DicConfig>
+    <!--基本功-->
+    <DicConfig>
+        <Key>JBG</Key>
+        <Value>JiBenGong.xml</Value>
+    </DicConfig>
+    <!--武功招式-->
+    <DicConfig>
+        <Key>ZS</Key>
+        <Value>ZhaoShi.xml</Value>
+    </DicConfig>
+    <!--生活技能-->
+    <DicConfig>
+        <Key>SHJN</Key>
+        <Value>ShengHuoJiNeng.xml</Value>
+    </DicConfig>
+    <!--技艺-->
+    <DicConfig>
+        <Key>JY</Key>
+        <Value>JiYi.xml</Value>
+    </DicConfig>
+</ArrayOfDicConfig>

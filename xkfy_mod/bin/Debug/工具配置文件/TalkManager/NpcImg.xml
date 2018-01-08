@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDicConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<DicConfig>
+		<Key>100014_06</Key>
+		<Value>主角大哭</Value>
+	</DicConfig>
+	<DicConfig>
+		<Key>100015_01</Key>
+		<Value>古月轩</Value>
+	</DicConfig>
+	<DicConfig>
+		<Key>100057_01</Key>
+		<Value>秦红觞</Value>
+	</DicConfig>
+	<DicConfig>
+		<Key>100035_01</Key>
+		<Value>沈湘芸</Value>
+	</DicConfig>
+</ArrayOfDicConfig>

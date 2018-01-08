@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTableExplain xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TableExplain>
+		<Column>#ID$0</Column>
+		<Text />
+		<Explain />
+		<Width>100</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strProbability$1</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strProbability$2</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strProbability$3</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strProbability$4</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strProbability$5</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strProbability$6</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strProbability$7</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strProbability$8</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strProbability$9</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strProbability$10</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strProbability$11</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+	<TableExplain>
+		<Column>strProbability$12</Column>
+		<Text />
+		<Explain />
+		<Width>530</Width>
+		<Height>21</Height>
+	</TableExplain>
+</ArrayOfTableExplain>

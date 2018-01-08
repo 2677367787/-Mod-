@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfSelectItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!---->
+    <SelectItem>
+        <Type>zhaoshi</Type>
+        <ChildType>zhaoshi</ChildType>
+        <Text>MB</Text>
+        <Value>1</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>ZS</Type>
+        <ChildType>zhaoshi</ChildType>
+        <Text>JBG</Text>
+        <Value>2</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>zhaoshi</Type>
+        <ChildType>zhaoshi</ChildType>
+        <Text>SHJN</Text>
+        <Value>4</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>zhaoshi</Type>
+        <ChildType>zhaoshi</ChildType>
+        <Text>JY</Text>
+        <Value>5</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>zhaoshi</Type>
+        <ChildType>zhaoshi</ChildType>
+        <Text>ZS</Text>
+        <Value>12</Value>
+    </SelectItem>
+</ArrayOfSelectItem>

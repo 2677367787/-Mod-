@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLeftMenu xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!--面板属性-->
+    <LeftMenu>
+        <MenuText>面板属性</MenuText>
+        <MenuTag>1</MenuTag>
+        <MenuName>Basic.MianBan</MenuName>
+    </LeftMenu>
+    <!--基本功-->
+    <LeftMenu>
+        <MenuText>基本功</MenuText>
+        <MenuTag>32</MenuTag>
+        <MenuName>Basic.JiBenGong</MenuName>
+    </LeftMenu>
+    <!--武功招式-->
+    <LeftMenu>
+        <MenuText>武功招式</MenuText>
+        <MenuTag>24</MenuTag>
+        <MenuName>Basic.ZhaoShi</MenuName>
+    </LeftMenu>
+    <!--生活技能-->
+    <LeftMenu>
+        <MenuText>生活技能</MenuText>
+        <MenuTag>4</MenuTag>
+        <MenuName>Basic.ShengHuoJiNeng</MenuName>
+    </LeftMenu>
+    <!--技艺-->
+    <LeftMenu>
+        <MenuText>技艺</MenuText>
+        <MenuTag>5</MenuTag>
+        <MenuName>Basic.JiYi</MenuName>
+    </LeftMenu>
+</ArrayOfLeftMenu>

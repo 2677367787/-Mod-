@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfSelectItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!--基本功-->
+    <SelectItem>
+        <Type>jibengong</Type>
+        <ChildType>jibengong</ChildType>
+        <Text>眼功</Text>
+        <Value>0</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>jibengong</Type>
+        <ChildType>jibengong</ChildType>
+        <Text>耳功</Text>
+        <Value>1</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>jibengong</Type>
+        <ChildType>jibengong</ChildType>
+        <Text>软功</Text>
+        <Value>2</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>jibengong</Type>
+        <ChildType>jibengong</ChildType>
+        <Text>硬功</Text>
+        <Value>3</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>jibengong</Type>
+        <ChildType>jibengong</ChildType>
+        <Text>轻功</Text>
+        <Value>4</Value>
+    </SelectItem>
+    <SelectItem>
+        <Type>jibengong</Type>
+        <ChildType>jibengong</ChildType>
+        <Text>内功</Text>
+        <Value>5</Value>
+    </SelectItem>
+</ArrayOfSelectItem>

@@ -1,0 +1,19 @@
+卷 软件 的文件夹 PATH 列表
+卷序列号为 0000001E 84FA:DF83
+D:.
+    BattleCondition.Accumulate.作用方式.xml
+    BattleCondition.Effecttype.效果类型.xml
+    BattleNeigong.Accumulate.作用方式.xml
+    BattleNeigong.Effecttype.效果类型.xml
+    BattleNeigong是否百分比.xml
+    DataConfig.xml
+    ItemData.iRecover.xml
+    iWearAmsType.公用.武器类型.xml
+    tree.txt
+    基础信息.JiBenGong.xml
+    基础信息.JiYi.xml
+    基础信息.MianBan.xml
+    基础信息.ZhaoShi.xml
+    
+没有子文件夹 
+

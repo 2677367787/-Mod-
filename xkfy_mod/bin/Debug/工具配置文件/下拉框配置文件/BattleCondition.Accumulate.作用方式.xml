@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDicConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<DicConfig>
+		<Key>0</Key>
+		<Value>数值型自身</Value>
+	</DicConfig>
+	<DicConfig>
+		<Key>1</Key>
+		<Value>累积型自身</Value>
+	</DicConfig>
+	<DicConfig>
+		<Key>4</Key>
+		<Value>效果型自身</Value>
+	</DicConfig>
+	<DicConfig>
+		<Key>5</Key>
+		<Value>友军</Value>
+	</DicConfig>
+	<DicConfig>
+		<Key>7</Key>
+		<Value>触发</Value>
+	</DicConfig>
+	<DicConfig>
+		<Key>9</Key>
+		<Value>敌军</Value>
+	</DicConfig>
+	<DicConfig>
+		<Key>10</Key>
+		<Value>低于某值触发</Value>
+	</DicConfig>
+</ArrayOfDicConfig>

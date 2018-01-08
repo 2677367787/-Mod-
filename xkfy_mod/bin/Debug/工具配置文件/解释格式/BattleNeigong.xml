@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAnnotation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Annotation>
+		<ColumnName>#ID</ColumnName>
+		<ColumnValue />
+	</Annotation>
+	<Annotation>
+		<ColumnName>Name</ColumnName>
+		<ColumnValue />
+	</Annotation>
+	<Annotation>
+		<ColumnName>Desc</ColumnName>
+		<ColumnValue />
+	</Annotation>
+	<Annotation>
+		<ColumnName>iExp</ColumnName>
+		<ColumnValue />
+	</Annotation>
+	<Annotation>
+		<ColumnName>iNeigongType</ColumnName>
+		<ColumnValue />
+	</Annotation>
+	<Annotation>
+		<ColumnName>sIcon1</ColumnName>
+		<ColumnValue />
+	</Annotation>
+	<Annotation>
+		<ColumnName>sCIcon1</ColumnName>
+		<ColumnValue />
+	</Annotation>
+	<Annotation>
+		<ColumnName>EffectType</ColumnName>
+		<ExplainList>
+			<RowFormat>
+				<Key>0</Key>
+				<Value>气血</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>1</Key>
+				<Value>内力</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>3</Key>
+				<Value>伤害</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>4</Key>
+				<Value>防御</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>5</Key>
+				<Value>反击</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>6</Key>
+				<Value>闪避</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>7</Key>
+				<Value>暴击</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>8</Key>
+				<Value>攻击必中</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>9</Key>
+				<Value>移动力</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>15</Key>
+				<Value>反弹伤害</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>16</Key>
+				<Value>内力抵挡伤害</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>17</Key>
+				<Value>攻击吸气血</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>18</Key>
+				<Value>攻击吸内力</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>19</Key>
+				<Value>19</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>20</Key>
+				<Value>解除负面</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>22</Key>
+				<Value>行动等级/神行</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>23</Key>
+				<Value>连斩</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>24</Key>
+				<Value>不会被暴击</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>25</Key>
+				<Value>不会被反击</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>26</Key>
+				<Value>保护同伴</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>29</Key>
+				<Value>无限反击</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>30</Key>
+				<Value>模仿敌人招式反击</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>31</Key>
+				<Value>免疫中毒</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>32</Key>
+				<Value>降低伤害</Value>
+				<Format />
+			</RowFormat>
+		</ExplainList>
+	</Annotation>
+	<Annotation>
+		<ColumnName>Accumulate</ColumnName>
+		<ExplainList>
+			<RowFormat>
+				<Key>0</Key>
+				<Value>数值型自身</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>1</Key>
+				<Value>累积型自身</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>4</Key>
+				<Value>效果型自身</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>5</Key>
+				<Value>友军</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>7</Key>
+				<Value>触发</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>9</Key>
+				<Value>敌军</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>10</Key>
+				<Value>低于某值触发</Value>
+				<Format />
+			</RowFormat>
+		</ExplainList>
+	</Annotation>
+	<Annotation>
+		<ColumnName>Percent</ColumnName>
+		<ExplainList>
+			<RowFormat>
+				<Key>0</Key>
+				<Value>否</Value>
+				<Format />
+			</RowFormat>
+			<RowFormat>
+				<Key>1</Key>
+				<Value>是</Value>
+				<Format />
+			</RowFormat>
+		</ExplainList>
+	</Annotation>
+	<Annotation>
+		<ColumnName>Value1</ColumnName>
+	</Annotation>
+	<Annotation>
+		<ColumnName>Value2</ColumnName>
+	</Annotation>
+	<Annotation>
+		<ColumnName>ValueLimit</ColumnName>
+	</Annotation>
+</ArrayOfAnnotation>
