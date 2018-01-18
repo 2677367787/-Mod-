@@ -118,7 +118,7 @@ namespace xkfy_mod.Personality
             //修改页面表格的值
             if (_dgvDrc.DataGridView != null)
             {
-                DataHelper.SetCtrlByDataRow(groupBox1, _dgvDrc);
+                DataHelper.SetDataRowByCtrl(groupBox1, _dgvDrc);
             }
             dgXiaoGuo.CurrentCell = null;
             //恢复控件的初始状态

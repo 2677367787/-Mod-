@@ -39,19 +39,21 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel4 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(12, 38);
+            this.linkLabel1.Location = new System.Drawing.Point(12, 82);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(749, 12);
+            this.linkLabel1.Size = new System.Drawing.Size(293, 12);
             this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "http://bbs.3dmgame.com/forum.php?mod=viewthread&tid=4894974&extra=page%3D1%26filt" +
+            this.linkLabel1.Tag = "http://bbs.3dmgame.com/forum.php?mod=viewthread&tid=4894974&extra=page%3D1%26filt" +
     "er%3Dtypeid%26typeid%3D22670%26typeid%3D22670";
+            this.linkLabel1.Text = "3DM详细修改网址 http://bbs.3dmgame.com/forum.php";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label1
@@ -66,12 +68,13 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(12, 61);
+            this.linkLabel2.Location = new System.Drawing.Point(12, 60);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(281, 12);
+            this.linkLabel2.Size = new System.Drawing.Size(335, 12);
             this.linkLabel2.TabIndex = 2;
             this.linkLabel2.TabStop = true;
-            this.linkLabel2.Text = "http://bbs.3dmgame.com/thread-4887992-1-1.html";
+            this.linkLabel2.Tag = "http://bbs.3dmgame.com/thread-4887992-1-1.html";
+            this.linkLabel2.Text = "初阶修改 http://bbs.3dmgame.com/thread-4887992-1-1.html";
             this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label2
@@ -99,7 +102,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 132);
+            this.label4.Location = new System.Drawing.Point(10, 149);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(341, 12);
             this.label4.TabIndex = 8;
@@ -110,7 +113,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(12, 110);
+            this.label5.Location = new System.Drawing.Point(12, 127);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(191, 12);
             this.label5.TabIndex = 9;
@@ -119,12 +122,14 @@
             // linkLabel3
             // 
             this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Location = new System.Drawing.Point(12, 85);
+            this.linkLabel3.Location = new System.Drawing.Point(12, 36);
             this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(215, 12);
+            this.linkLabel3.Size = new System.Drawing.Size(317, 12);
             this.linkLabel3.TabIndex = 13;
             this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "http://tieba.baidu.com/p/4203925164";
+            this.linkLabel3.Tag = "http://tieba.baidu.com/p/4203925164";
+            this.linkLabel3.Text = "最详细的修改教程:http://tieba.baidu.com/p/4203925164";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // pictureBox1
             // 
@@ -149,7 +154,7 @@
             // linkLabel4
             // 
             this.linkLabel4.AutoSize = true;
-            this.linkLabel4.Location = new System.Drawing.Point(358, 132);
+            this.linkLabel4.Location = new System.Drawing.Point(358, 149);
             this.linkLabel4.Name = "linkLabel4";
             this.linkLabel4.Size = new System.Drawing.Size(95, 12);
             this.linkLabel4.TabIndex = 16;
@@ -157,11 +162,24 @@
             this.linkLabel4.Text = "@取名想了一整天";
             this.linkLabel4.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel4_LinkClicked);
             // 
+            // linkLabel5
+            // 
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.Location = new System.Drawing.Point(10, 107);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(341, 12);
+            this.linkLabel5.TabIndex = 17;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Tag = "https://github.com/2677367787/-Mod-";
+            this.linkLabel5.Text = "工具源代码地址github https://github.com/2677367787/-Mod-";
+            this.linkLabel5.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(782, 568);
+            this.Controls.Add(this.linkLabel5);
             this.Controls.Add(this.linkLabel4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.linkLabel3);
@@ -196,5 +214,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel linkLabel4;
+        private System.Windows.Forms.LinkLabel linkLabel5;
     }
 }

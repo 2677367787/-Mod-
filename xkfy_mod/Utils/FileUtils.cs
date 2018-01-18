@@ -185,26 +185,24 @@ namespace xkfy_mod.Utils
             {
                 Directory.Delete(path, true);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                // ignored
-            }
-            //            Thread.Sleep(100);
-            //            if (!Directory.Exists(path)) return;
-            //            DirectoryInfo di = new DirectoryInfo(path);
-            //
-            //            if (di.GetDirectories().Length == 0 && di.GetFiles().Length == 0) return;
-            //
-            //            foreach (DirectoryInfo d in di.GetDirectories())
-            //            {
-            //                DeleteDirectory(d.FullName);
-            //            }
-            //
-            //            foreach (FileInfo fi in di.GetFiles())
-            //            {
-            //                fi.Delete();
-            //            }
-            //            di.Delete(); 
+                if (!Directory.Exists(path)) return;
+                DirectoryInfo di = new DirectoryInfo(path);
+
+                if (di.GetDirectories().Length == 0 && di.GetFiles().Length == 0) return;
+
+                foreach (DirectoryInfo d in di.GetDirectories())
+                {
+                    DeleteDirectory(d.FullName);
+                }
+
+                foreach (FileInfo fi in di.GetFiles())
+                {
+                    fi.Delete();
+                }
+                di.Delete();
+            } 
         }
 
         private void DeleteFiles(string path)

@@ -266,7 +266,7 @@ namespace xkfy_mod
                 if (chkTalk.Checked)
                 {
                     TalkManagerEdit msgForm;
-                    bool wExist = _tl.CheckFormIsOpen("TalkManagerEdit");
+                    bool wExist = ToolsHelper.CheckFormIsOpen("TalkManagerEdit");
 
                     if (!wExist)
                     {

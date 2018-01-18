@@ -364,7 +364,7 @@ namespace xkfy_mod.Helper
             //加载表头配置文件
             LoadColumnData(configKey);
             //构建表结构
-            BuildTableStruct(tbName, DataHelper.ToolColumnConfig[configKey], "4");
+            BuildTableStruct(tbName, DataHelper.ToolColumnConfig[configKey], "map");
             ReadModFile(tbName, path);
         }
 
@@ -381,7 +381,7 @@ namespace xkfy_mod.Helper
         /// <param name="filePath"></param>
         public static void Distinguish(string tbName, string filePath = null)
         {
-            string typeName = tbName.Substring(0, 3);
+            string typeName = tbName.Substring(0, 3).ToUpper();
             if (typeName != "MAP" && typeName != "NPC" && !DataHelper.FormConfig.ContainsKey(tbName))
                 return;
             if (filePath == null)

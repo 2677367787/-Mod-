@@ -18,7 +18,7 @@ namespace xkfy_mod.Personality
 
         private void BattleAreaData_Edit_Load(object sender, EventArgs e)
         {
-            if (_type == "Update")
+            if (_type == "Modify")
             {
                 //修改
                 DataHelper.SetCtrlByDataRow(this, _dr);

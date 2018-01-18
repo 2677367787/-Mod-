@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dg1 = new System.Windows.Forms.DataGridView();
+            this.indexSn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rowState = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dg1RightMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmCopyRow = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmInsertCopyRow = new System.Windows.Forms.ToolStripMenuItem();
@@ -56,8 +58,6 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnDebug = new System.Windows.Forms.Button();
             this.btnEditTalkGroup = new System.Windows.Forms.Button();
-            this.indexSn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rowState = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dg1)).BeginInit();
             this.dg1RightMenu.SuspendLayout();
             this.gbQueryCon.SuspendLayout();
@@ -87,6 +87,21 @@
             this.dg1.CurrentCellChanged += new System.EventHandler(this.dg1_CurrentCellChanged);
             this.dg1.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dg1_DefaultValuesNeeded);
             this.dg1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dg1_RowPostPaint);
+            // 
+            // indexSn
+            // 
+            this.indexSn.DataPropertyName = "indexSn";
+            this.indexSn.HeaderText = "工具排序用";
+            this.indexSn.Name = "indexSn";
+            this.indexSn.Visible = false;
+            this.indexSn.Width = 60;
+            // 
+            // rowState
+            // 
+            this.rowState.DataPropertyName = "rowState";
+            this.rowState.HeaderText = "rowState";
+            this.rowState.Name = "rowState";
+            this.rowState.Visible = false;
             // 
             // dg1RightMenu
             // 
@@ -127,6 +142,8 @@
             // 
             // gbQueryCon
             // 
+            this.gbQueryCon.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gbQueryCon.Controls.Add(this.lblTips);
             this.gbQueryCon.Controls.Add(this.chkIsModify);
             this.gbQueryCon.Location = new System.Drawing.Point(5, -3);
@@ -137,6 +154,7 @@
             // 
             // lblTips
             // 
+            this.lblTips.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTips.AutoSize = true;
             this.lblTips.Location = new System.Drawing.Point(663, 41);
             this.lblTips.Name = "lblTips";
@@ -146,6 +164,7 @@
             // 
             // chkIsModify
             // 
+            this.chkIsModify.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.chkIsModify.AutoSize = true;
             this.chkIsModify.Location = new System.Drawing.Point(905, 40);
             this.chkIsModify.Name = "chkIsModify";
@@ -165,6 +184,7 @@
             // 
             // btnCopyAdd
             // 
+            this.btnCopyAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCopyAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCopyAdd.Location = new System.Drawing.Point(949, 72);
             this.btnCopyAdd.Name = "btnCopyAdd";
@@ -176,6 +196,7 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.Location = new System.Drawing.Point(787, 72);
             this.btnAdd.Name = "btnAdd";
@@ -187,6 +208,7 @@
             // 
             // btnQuery
             // 
+            this.btnQuery.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnQuery.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuery.Location = new System.Drawing.Point(868, 72);
             this.btnQuery.Name = "btnQuery";
@@ -221,8 +243,7 @@
             // 
             // gbZhanDou
             // 
-            this.gbZhanDou.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbZhanDou.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.gbZhanDou.Controls.Add(this.txtWin);
             this.gbZhanDou.Controls.Add(this.label1);
             this.gbZhanDou.Controls.Add(this.lblSl);
@@ -315,6 +336,7 @@
             // 
             // btnDebug
             // 
+            this.btnDebug.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDebug.Location = new System.Drawing.Point(706, 72);
             this.btnDebug.Name = "btnDebug";
             this.btnDebug.Size = new System.Drawing.Size(75, 23);
@@ -326,6 +348,7 @@
             // 
             // btnEditTalkGroup
             // 
+            this.btnEditTalkGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnEditTalkGroup.Location = new System.Drawing.Point(706, 72);
             this.btnEditTalkGroup.Name = "btnEditTalkGroup";
             this.btnEditTalkGroup.Size = new System.Drawing.Size(75, 23);
@@ -334,21 +357,6 @@
             this.btnEditTalkGroup.UseVisualStyleBackColor = true;
             this.btnEditTalkGroup.Visible = false;
             this.btnEditTalkGroup.Click += new System.EventHandler(this.btnEditTalkGroup_Click);
-            // 
-            // indexSn
-            // 
-            this.indexSn.DataPropertyName = "indexSn";
-            this.indexSn.HeaderText = "工具排序用";
-            this.indexSn.Name = "indexSn";
-            this.indexSn.Visible = false;
-            this.indexSn.Width = 60;
-            // 
-            // rowState
-            // 
-            this.rowState.DataPropertyName = "rowState";
-            this.rowState.HeaderText = "rowState";
-            this.rowState.Name = "rowState";
-            this.rowState.Visible = false;
             // 
             // Almighty
             // 

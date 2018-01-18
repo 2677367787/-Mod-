@@ -352,8 +352,11 @@ namespace xkfy_mod
 
         private void dg1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //修改 0
-            ShowForm("Modify","修改");
+            if (e.RowIndex != -1)
+            {
+                //修改 0
+                ShowForm("Modify", "修改");
+            } 
         }
 
         private void btnCopyAdd_Click(object sender, EventArgs e)

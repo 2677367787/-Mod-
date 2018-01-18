@@ -34,7 +34,7 @@ namespace xkfy_mod.Personality
                     btnAdd.Visible = true;
                     SetValue();
                     break;
-                case "Update":
+                case "Modify":
                     //txtSkillNo.Enabled = false;
                     btnUpdate.Visible = true;
                     SetValue();
@@ -67,7 +67,7 @@ namespace xkfy_mod.Personality
 
         private void btnSelBuff_Click(object sender, EventArgs e)
         { 
-            ToolsHelper.OpenBattleCondition(txtBuffID, txtBuffName,Const.OpenType.Radio);
+            ToolsHelper.OpenBattleCondition(txtBuffID, txtBuffName,Const.OpenType.Mulit);
         }
     }
 }

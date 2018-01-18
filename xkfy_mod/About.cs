@@ -14,7 +14,7 @@ namespace xkfy_mod
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start(((Label)sender).Text);
+            System.Diagnostics.Process.Start(((Label)sender).Tag.ToString());
         }
 
         private void About_Load(object sender, EventArgs e)

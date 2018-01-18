@@ -373,7 +373,7 @@ namespace xkfy_mod.Personality
             if (string.IsNullOrEmpty(_talkGroup[_rowOrder]["rowState"].ToString()))
                 _talkGroup[_rowOrder]["rowState"] = "1";
             DataHelper.SetDataRowByCtrl(this, newRow);
-            DataHelper.XkfyData.Tables[Const.TalkManager].Rows.InsertAt(newRow, DataHelper.XkfyData.Tables[Const.TalkManager].Rows.IndexOf(_talkGroup[_rowOrder])+1);
+            DataHelper.XkfyData.Tables[Const.TalkManager].Rows.InsertAt(newRow, DataHelper.XkfyData.Tables[Const.TalkManager].Rows.IndexOf(_talkGroup[_rowOrder]));
             DataHelper.XkfyData.Tables[Const.TalkManager].AcceptChanges();
             _talkGroup = DataHelper.XkfyData.Tables[Const.TalkManager].Select($"iQGroupID='{txtiQGroupID.Text}'","indexSn Asc");
             lblTotal.Text = $"本组对话共{_talkGroup.Length}条";

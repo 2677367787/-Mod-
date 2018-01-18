@@ -71,18 +71,7 @@ namespace xkfy_mod
             if (d?.Tag == null)
                 return;
             string tbName = d.Tag.ToString();
-            if (DataHelper.FormConfig.ContainsKey(tbName))
-            {
-                FileHelper.Distinguish(tbName);
-            }
-
-//            if (DataHelper.MapData.Tables.Contains(tbName))
-//            {
-//                DataTable dt = DataHelper.MapData.Tables[tbName];
-//                string txtName = dt.TableName + ".txt";
-//                FileHelper.StructureMapData(dt, txtName);
-//                FileUtils.BuildDataSetXmlMap(dt.TableName);
-//            }
+            FileHelper.Distinguish(tbName);
             d.Text = d.Text.TrimEnd('*');
         }
 
@@ -96,10 +85,7 @@ namespace xkfy_mod
         }
         #endregion　
 
-        private Dock _dock1;
-        private readonly About _about = new About();
-
-        public About About => _about;
+        private Dock _dock1;  
 
         #region 联动树形菜单选择
         /// <summary>
@@ -129,17 +115,13 @@ namespace xkfy_mod
 
             _dock1 = new Dock();
             _dock1.Show(dockPanel1, DockState.DockLeft);
-
-            foreach (IDockContent frm in dockPanel1.Documents)
+            for (int i = dockPanel1.Documents.Count() - 1; i >= 0; i--)
             {
-                DockContent dc = (DockContent)frm;
-                if (dc.Tag != null)
-                {
-                    FileHelper.LoadTable(dc.Tag.ToString());
-                }
-            }
-            About.MdiParent = this;
-            About.Show(dockPanel1);　
+                DockContent dc = (DockContent) dockPanel1.Documents.ElementAt(i);
+                dc.Close();
+            } 
+            About about = new About {MdiParent = this};
+            about.Show(dockPanel1);　
         }
         #endregion
 
@@ -209,10 +191,13 @@ namespace xkfy_mod
         {
             DataHelper.ReadError.Clear(); 
             DataHelper.FormConfig.Clear(); 
-            DataHelper.ExplainConfig.Clear(); 
-            DataHelper.XkfyData.Tables.Clear(); 
+            DataHelper.ExplainConfig.Clear();  
             DataHelper.DictModFiles.Clear();
-            DataHelper.DropDownListDict.Clear();
+            DataHelper.DropDownListDict.Clear(); 
+            DataHelper.DictImages.Clear();
+            DataHelper.XkfyData.Tables.Clear();
+            DataHelper.DdlDataSet.Tables.Clear();
+            DataHelper.ToolColumnConfig.Clear();
         }
         #endregion
 
@@ -261,7 +246,7 @@ namespace xkfy_mod
                 }
             }
             ToolsHelper tl = new ToolsHelper();
-            string path = Application.StartupPath + "\\CustomData\\TableExplain";
+            string path = Application.StartupPath + "\\工具配置文件\\TableExplain";
             foreach (KeyValuePair<string, string> dlc in dlcTbName)
             {
                 List<TableExplain> list = new List<TableExplain>();
@@ -316,13 +301,17 @@ namespace xkfy_mod
 
         private void 重新加载当前文件ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            DockContent d = (DockContent)dockPanel1.ActiveDocument;
-            if (d == null || d.Tag == null)
+            DockContent activeDocument = (DockContent)dockPanel1.ActiveDocument;
+            if (activeDocument?.Tag == null)
                 return;
-            string tbName = d.Tag.ToString();
+            string tbName = activeDocument.Tag.ToString();
             DataHelper.XkfyData.Tables.Remove(tbName);
+            if (DataHelper.FormConfig[tbName].DtType == "1")
+            {
+                DataHelper.XkfyData.Tables.Remove(tbName + "_D");
+            }
             FileHelper.LoadTable(tbName);
-            d.Close();
+            activeDocument.Close();
         }
 
         private void 事件树ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -507,29 +496,36 @@ namespace xkfy_mod
         }
 
         private void tsmCreate_Click_1(object sender, EventArgs e)
-        { 
-            DialogResult dr = MessageBox.Show(Resources.FrmMain_Restart, Resources.FrmMain_Restart, MessageBoxButtons.OKCancel);
-            if (dr == DialogResult.OK)
-            {
-                string path = PathHelper.AppConfigPath;
-                if (!File.Exists(path))
+        {
+            try
+            { 
+                DialogResult dr = MessageBox.Show(Resources.FrmMain_Restart, Resources.FrmMain_Restart, MessageBoxButtons.OKCancel);
+                if (dr == DialogResult.OK)
                 {
-                    MessageBox.Show(@"你还没有新建过方案，请先新建方案！");
-                    return;
+                    string path = PathHelper.AppConfigPath;
+                    if (!File.Exists(path))
+                    {
+                        MessageBox.Show(@"你还没有新建过方案，请先新建方案！");
+                        return;
+                    }
+                    var list = FileHelper.ReadAppConfig();
+
+                    list[0].CreatePath = PathHelper.ModifyFolderPath;
+                    //保存Mod的路径，方便选择
+                    FileHelper.SaveAppConfig(list);
+
+                    FileUtils.DeleteDirectory(PathHelper.ModifyFolderPath);
+
+                    FileUtils.CopyFolderTo(PathHelper.ModFoderPath, PathHelper.ModifyFolderPath);
+                    ClearData();
+
+                    Start(PathHelper.ModifyFolderPath);
                 }
-                var list = FileHelper.ReadAppConfig();
-
-                list[0].CreatePath = PathHelper.ModifyFolderPath;
-                //保存Mod的路径，方便选择
-                FileHelper.SaveAppConfig(list);
-                string path1 = Application.StartupPath+"\\"+ PathHelper.ModifyFolderPath;
-                //FileUtils.DeleteDirectory(PathHelper.ModifyFolderPath);
-               
-                //FileUtils.CopyFolderTo(PathHelper.ModFoderPath, PathHelper.ModifyFolderPath);
-                ClearData();
-
-                Start(PathHelper.ModifyFolderPath);
-            } 
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(@"发生未知异常,请手动复制工具目录【原始文件】文件夹里所有内容\r\n放入【修改后的文件】然后重启工具即可");
+            }
         }
 
         private void 回合信息ToolStripMenuItem_Click(object sender, EventArgs e)

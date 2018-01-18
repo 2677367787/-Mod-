@@ -99,6 +99,24 @@ namespace xkfy_mod.Personality
                     key = "JY";
                     break;
             }
+//            switch (str[0])
+//            {
+//                case "0":
+//                    key = "Basic.MianBan";
+//                    break;
+//                case "1":
+//                    key = "Basic.JiBenGong";
+//                    break;
+//                case "2":
+//                    key = "Basic.ZhaoShi";
+//                    break;
+//                case "3":
+//                    key = "Basic.ShengHuoJiNeng";
+//                    break;
+//                case "4":
+//                    key = "Basic.JiYi";
+//                    break;
+//            }
             Dictionary<string, string> dic = DataHelper.ExplainConfig[key];
             if (dic.ContainsKey(str[1]))
                 txtTsName.Text = dic[str[1]];

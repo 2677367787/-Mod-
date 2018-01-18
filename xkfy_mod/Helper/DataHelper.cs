@@ -491,7 +491,7 @@ namespace xkfy_mod.Helper
         {
             //读取DicConfig.xml 
             //循环读取招式,技艺,等数据
-            string path = Application.StartupPath + "/CustomData/";
+            string path = Application.StartupPath + "/工具配置文件/";
             IList<DicConfig> list = FileUtils.ReadConfig<DicConfig>(path+ "DicConfig.xml");
             foreach (DicConfig dc in list)
             {

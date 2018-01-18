@@ -1039,9 +1039,8 @@ namespace xkfy_mod.Helper
             }
         }
 
-        #endregion 
-
-        public bool CheckFormIsOpen(string forms)
+        #endregion
+        public static bool CheckFormIsOpen(string forms)
         {
             return Application.OpenForms.Cast<Form>().Any(frm => frm.Name == forms);
         }

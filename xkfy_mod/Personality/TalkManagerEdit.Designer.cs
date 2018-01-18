@@ -1358,7 +1358,7 @@
             this.label68.AutoSize = true;
             this.label68.BackColor = System.Drawing.SystemColors.Control;
             this.label68.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label68.Location = new System.Drawing.Point(12, 55);
+            this.label68.Location = new System.Drawing.Point(12, 34);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(263, 12);
             this.label68.TabIndex = 168;
@@ -1512,7 +1512,7 @@
             this.plTalkGroup.Controls.Add(this.label68);
             this.plTalkGroup.Location = new System.Drawing.Point(4, 679);
             this.plTalkGroup.Name = "plTalkGroup";
-            this.plTalkGroup.Size = new System.Drawing.Size(796, 71);
+            this.plTalkGroup.Size = new System.Drawing.Size(796, 57);
             this.plTalkGroup.TabIndex = 177;
             this.plTalkGroup.Visible = false;
             // 
@@ -1530,7 +1530,8 @@
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(12, 34);
+            this.label36.ForeColor = System.Drawing.Color.MediumBlue;
+            this.label36.Location = new System.Drawing.Point(492, 34);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(299, 12);
             this.label36.TabIndex = 178;
@@ -1615,7 +1616,7 @@
             this.label34.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label34.BackColor = System.Drawing.SystemColors.Highlight;
             this.label34.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.label34.Location = new System.Drawing.Point(61, 605);
+            this.label34.Location = new System.Drawing.Point(61, 607);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(880, 1);
             this.label34.TabIndex = 181;
@@ -1624,7 +1625,7 @@
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.BackColor = System.Drawing.Color.RosyBrown;
-            this.label4.Location = new System.Drawing.Point(56, 633);
+            this.label4.Location = new System.Drawing.Point(56, 635);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(880, 1);
             this.label4.TabIndex = 182;
@@ -1634,7 +1635,7 @@
             this.label37.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label37.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label37.Location = new System.Drawing.Point(56, 660);
+            this.label37.Location = new System.Drawing.Point(56, 662);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(880, 1);
             this.label37.TabIndex = 183;
@@ -1643,7 +1644,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 757);
+            this.ClientSize = new System.Drawing.Size(1010, 760);
             this.Controls.Add(this.panelTalk);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnTemplate);
