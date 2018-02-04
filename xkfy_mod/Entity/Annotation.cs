@@ -16,8 +16,11 @@ namespace xkfy_mod.Entity
 {
     public class Annotation
     {
-        public string ColumnName { get; set; }
-        public string ColumnValue { get; set; }
-        public List<RowFormat> ExplainList { get; set; }
+        public string Id { get; set; }
+        public string ParentId { get; set; }
+        public string Column { get; set; }
+        public string Code { get; set; }
+        public string Text { get; set; } 
+        public string Remark { get; set; }
     }
 }

@@ -26,16 +26,6 @@ namespace xkfy_mod
             _dictTableExplain = fd.DictTableExplain;
             InitializeComponent();
         }
-        public static int GetTextBoxLength(string textboxTextStr)
-        {
-            int nLength = 0;
-            for (int i = 0; i < textboxTextStr.Length; i++)
-            {
-                if (textboxTextStr[i] >= 0x3000 && textboxTextStr[i] <= 0x9FFF)
-                    nLength++;
-            }
-            return nLength;
-        }
 
         private void Almighty_Edit_Load(object sender, EventArgs e)
         {

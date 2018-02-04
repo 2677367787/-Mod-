@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using xkfy_mod.Entity;
 using xkfy_mod.Utils; 
@@ -220,7 +221,7 @@ namespace xkfy_mod.Helper
                 {
                     if (((RadioButton)control).Checked)
                     {
-                        dr[rowName] = StringUtils.GetCnLength(((RadioButton)control).Text);
+                        dr[rowName] = StringUtils.GetRdoValue(((RadioButton)control).Text);
                     }
                 }
                 else if (control is Panel || control is GroupBox)
@@ -339,6 +340,34 @@ namespace xkfy_mod.Helper
                 else if (control is Panel || control is GroupBox)
                 {
                     SetCtrlByDataRow(control, dr);
+                }
+            }
+        }
+
+        public static void SetCtrlLabelData(Control baseControl, IList<TableExplain> list)
+        {
+            foreach (Control control in baseControl.Controls)
+            {
+                if (control.Tag == null)
+                {
+                    continue;
+                }
+
+                string rowName = control.Tag.ToString();
+                List<TableExplain> listExplain = list.Where(l => l.Column == rowName).ToList();
+                if (listExplain.Count > 0)
+                {
+                    if (control is Label)
+                    {
+                        string text = string.IsNullOrEmpty(listExplain[0].Text)
+                            ? listExplain[0].Column
+                            : listExplain[0].Text;
+                        ((Label) control).Text = text;
+                    }
+                    else if (control is Panel || control is GroupBox)
+                    {
+                        SetCtrlLabelData(control, list);
+                    }
                 }
             }
         }

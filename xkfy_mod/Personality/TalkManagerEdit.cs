@@ -226,7 +226,7 @@ namespace xkfy_mod.Personality
             }
             if (!string.IsNullOrEmpty(tbName))
             {
-                ToolsHelper.OpenChooseForm(tbName, row, txtSelValue2, null, "1");
+                ToolsHelper.OpenChooseForm(tbName, row, txtSelValue2, null, Const.OpenType.Radio);
             }
         }
 
@@ -370,15 +370,21 @@ namespace xkfy_mod.Personality
             }
             
             DataRow newRow = DataHelper.XkfyData.Tables[Const.TalkManager].NewRow();
-            if (string.IsNullOrEmpty(_talkGroup[_rowOrder]["rowState"].ToString()))
-                _talkGroup[_rowOrder]["rowState"] = "1";
             DataHelper.SetDataRowByCtrl(this, newRow);
-            DataHelper.XkfyData.Tables[Const.TalkManager].Rows.InsertAt(newRow, DataHelper.XkfyData.Tables[Const.TalkManager].Rows.IndexOf(_talkGroup[_rowOrder]));
+            newRow["rowState"] = "1";
+            int index = DataHelper.XkfyData.Tables[Const.TalkManager].Rows.IndexOf(_talkGroup[_rowOrder]);
+            DataHelper.XkfyData.Tables[Const.TalkManager].Rows.InsertAt(newRow, index+1);
             DataHelper.XkfyData.Tables[Const.TalkManager].AcceptChanges();
+
             _talkGroup = DataHelper.XkfyData.Tables[Const.TalkManager].Select($"iQGroupID='{txtiQGroupID.Text}'","indexSn Asc");
+            for (int i = 0; i < _talkGroup.Length; i++)
+            {
+                _talkGroup[i]["indexSn"] = i;
+            }
             lblTotal.Text = $"本组对话共{_talkGroup.Length}条";
-            BinderTalkGroupy();
             _rowOrder++;
+            BinderTalkGroupy();
+            txtsManager.Text = @"[请修改]";
             label36.Text = @"当前在修改复制的行,请注意修改序号";
         }
 

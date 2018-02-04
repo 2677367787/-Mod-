@@ -174,7 +174,7 @@
 		<Notes>大地图和战斗对白</Notes>
 		<BasicCritical>0</BasicCritical>
 		<EffectCritical>0</EffectCritical>
-		<EditFormName>0</EditFormName>
+		<EditFormName>MapTalkManagerEdit</EditFormName>
 	</MyConfig>
 	<MyConfig>
 		<MainDtName>QuestDataManager</MainDtName>

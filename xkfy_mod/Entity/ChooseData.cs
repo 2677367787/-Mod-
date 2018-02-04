@@ -7,11 +7,8 @@
 ** 创建日期：2017/12/23 17:41:43
 ** 修改记录： 
 *****************************************************/
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
+using xkfy_mod.Data;
 
 namespace xkfy_mod.Entity
 {
@@ -25,7 +22,7 @@ namespace xkfy_mod.Entity
         /// <summary>
         /// 类型 1，单选；2,多选
         /// </summary>
-        public string SelType { get; set; }
+        public Const.OpenType SelType { get; set; }
 
         /// <summary>
         /// 界面显示的列名数组

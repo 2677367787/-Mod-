@@ -30,8 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dg1 = new System.Windows.Forms.DataGridView();
-            this.indexSn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rowState = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dg1RightMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.tsmCopyRow = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmInsertCopyRow = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,6 +56,8 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.btnDebug = new System.Windows.Forms.Button();
             this.btnEditTalkGroup = new System.Windows.Forms.Button();
+            this.indexSn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rowState = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dg1)).BeginInit();
             this.dg1RightMenu.SuspendLayout();
             this.gbQueryCon.SuspendLayout();
@@ -87,21 +87,6 @@
             this.dg1.CurrentCellChanged += new System.EventHandler(this.dg1_CurrentCellChanged);
             this.dg1.DefaultValuesNeeded += new System.Windows.Forms.DataGridViewRowEventHandler(this.dg1_DefaultValuesNeeded);
             this.dg1.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dg1_RowPostPaint);
-            // 
-            // indexSn
-            // 
-            this.indexSn.DataPropertyName = "indexSn";
-            this.indexSn.HeaderText = "工具排序用";
-            this.indexSn.Name = "indexSn";
-            this.indexSn.Visible = false;
-            this.indexSn.Width = 60;
-            // 
-            // rowState
-            // 
-            this.rowState.DataPropertyName = "rowState";
-            this.rowState.HeaderText = "rowState";
-            this.rowState.Name = "rowState";
-            this.rowState.Visible = false;
             // 
             // dg1RightMenu
             // 
@@ -357,6 +342,19 @@
             this.btnEditTalkGroup.UseVisualStyleBackColor = true;
             this.btnEditTalkGroup.Visible = false;
             this.btnEditTalkGroup.Click += new System.EventHandler(this.btnEditTalkGroup_Click);
+            // 
+            // indexSn
+            // 
+            this.indexSn.DataPropertyName = "indexSn";
+            this.indexSn.HeaderText = "工具排序用";
+            this.indexSn.Name = "indexSn";
+            this.indexSn.Width = 60;
+            // 
+            // rowState
+            // 
+            this.rowState.DataPropertyName = "rowState";
+            this.rowState.HeaderText = "rowState";
+            this.rowState.Name = "rowState";
             // 
             // Almighty
             // 

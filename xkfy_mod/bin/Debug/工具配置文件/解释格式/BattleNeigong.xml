@@ -1,220 +1,377 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ArrayOfAnnotation xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Annotation>
-		<ColumnName>#ID</ColumnName>
-		<ColumnValue />
+		<Id>BattleNeigong1</Id>
+		<ParentId>Base</ParentId>
+		<Column>#ID</Column>
+		<Code>#ID</Code>
+		<Text>内功编号</Text>
+		<Remark> </Remark>
 	</Annotation>
 	<Annotation>
-		<ColumnName>Name</ColumnName>
-		<ColumnValue />
+		<Id>BattleNeigong2</Id>
+		<ParentId>Base</ParentId>
+		<Column>Name</Column>
+		<Code>Name</Code>
+		<Text>内功名字</Text>
+		<Remark> </Remark>
 	</Annotation>
 	<Annotation>
-		<ColumnName>Desc</ColumnName>
-		<ColumnValue />
+		<Id>BattleNeigong3</Id>
+		<ParentId>Base</ParentId>
+		<Column>Desc</Column>
+		<Code>Desc</Code>
+		<Text>描述</Text>
+		<Remark> </Remark>
 	</Annotation>
 	<Annotation>
-		<ColumnName>iExp</ColumnName>
-		<ColumnValue />
+		<Id>BattleNeigong4</Id>
+		<ParentId>Base</ParentId>
+		<Column>iExp</Column>
+		<Code>iExp</Code>
+		<Text>经验</Text>
+		<Remark> </Remark>
 	</Annotation>
 	<Annotation>
-		<ColumnName>iNeigongType</ColumnName>
-		<ColumnValue />
+		<Id>BattleNeigong5</Id>
+		<ParentId>Base</ParentId>
+		<Column>iNeigongType</Column>
+		<Code>iNeigongType</Code>
+		<Remark> </Remark>
 	</Annotation>
 	<Annotation>
-		<ColumnName>sIcon1</ColumnName>
-		<ColumnValue />
+		<Id>BattleNeigong6</Id>
+		<ParentId>Base</ParentId>
+		<Column>sIcon1</Column>
+		<Code>sIcon1</Code>
+		<Text>修炼界面图标</Text>
+		<Remark> </Remark>
 	</Annotation>
 	<Annotation>
-		<ColumnName>sCIcon1</ColumnName>
-		<ColumnValue />
+		<Id>BattleNeigong7</Id>
+		<ParentId>Base</ParentId>
+		<Column>sCIcon1</Column>
+		<Code>sCIcon1</Code>
+		<Remark> </Remark>
 	</Annotation>
 	<Annotation>
-		<ColumnName>EffectType</ColumnName>
-		<ExplainList>
-			<RowFormat>
-				<Key>0</Key>
-				<Value>气血</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>1</Key>
-				<Value>内力</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>3</Key>
-				<Value>伤害</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>4</Key>
-				<Value>防御</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>5</Key>
-				<Value>反击</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>6</Key>
-				<Value>闪避</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>7</Key>
-				<Value>暴击</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>8</Key>
-				<Value>攻击必中</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>9</Key>
-				<Value>移动力</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>15</Key>
-				<Value>反弹伤害</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>16</Key>
-				<Value>内力抵挡伤害</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>17</Key>
-				<Value>攻击吸气血</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>18</Key>
-				<Value>攻击吸内力</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>19</Key>
-				<Value>19</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>20</Key>
-				<Value>解除负面</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>22</Key>
-				<Value>行动等级/神行</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>23</Key>
-				<Value>连斩</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>24</Key>
-				<Value>不会被暴击</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>25</Key>
-				<Value>不会被反击</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>26</Key>
-				<Value>保护同伴</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>29</Key>
-				<Value>无限反击</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>30</Key>
-				<Value>模仿敌人招式反击</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>31</Key>
-				<Value>免疫中毒</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>32</Key>
-				<Value>降低伤害</Value>
-				<Format />
-			</RowFormat>
-		</ExplainList>
+		<Id>BattleNeigong8</Id>
+		<ParentId>Base</ParentId>
+		<Column>#ID</Column>
+		<Code>#ID</Code>
+		<Text>内功编号</Text>
+		<Remark> </Remark>
 	</Annotation>
 	<Annotation>
-		<ColumnName>Accumulate</ColumnName>
-		<ExplainList>
-			<RowFormat>
-				<Key>0</Key>
-				<Value>数值型自身</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>1</Key>
-				<Value>累积型自身</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>4</Key>
-				<Value>效果型自身</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>5</Key>
-				<Value>友军</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>7</Key>
-				<Value>触发</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>9</Key>
-				<Value>敌军</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>10</Key>
-				<Value>低于某值触发</Value>
-				<Format />
-			</RowFormat>
-		</ExplainList>
+		<Id>BattleNeigong9</Id>
+		<ParentId>Base</ParentId>
+		<Column>EffectType</Column>
+		<Code>EffectType</Code>
+		<Text>状态效果</Text>
+		<Remark> </Remark>
 	</Annotation>
 	<Annotation>
-		<ColumnName>Percent</ColumnName>
-		<ExplainList>
-			<RowFormat>
-				<Key>0</Key>
-				<Value>否</Value>
-				<Format />
-			</RowFormat>
-			<RowFormat>
-				<Key>1</Key>
-				<Value>是</Value>
-				<Format />
-			</RowFormat>
-		</ExplainList>
+		<Id>BattleNeigong10</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>0</Code>
+		<Text>气血</Text>
+		<Remark> </Remark>
 	</Annotation>
 	<Annotation>
-		<ColumnName>Value1</ColumnName>
+		<Id>BattleNeigong11</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>1</Code>
+		<Text>内力</Text>
+		<Remark> </Remark>
 	</Annotation>
 	<Annotation>
-		<ColumnName>Value2</ColumnName>
+		<Id>BattleNeigong12</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>3</Code>
+		<Text>伤害</Text>
+		<Remark> </Remark>
 	</Annotation>
 	<Annotation>
-		<ColumnName>ValueLimit</ColumnName>
+		<Id>BattleNeigong13</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>4</Code>
+		<Text>防御</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong14</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>5</Code>
+		<Text>反击</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong15</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>6</Code>
+		<Text>闪避</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong16</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>7</Code>
+		<Text>暴击</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong17</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>8</Code>
+		<Text>命中</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong18</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>9</Code>
+		<Text>移动力</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong19</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>10</Code>
+		<Text>免疫内伤</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong20</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>15</Code>
+		<Text>反弹伤害</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong21</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>16</Code>
+		<Text>内力抵挡伤害</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong22</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>17</Code>
+		<Text>攻击吸气血</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong23</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>18</Code>
+		<Text>攻击吸内力</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong24</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>19</Code>
+		<Text>作用不明</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong25</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>20</Code>
+		<Text>解除负面</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong26</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>22</Code>
+		<Text>行动等级/神行</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong27</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>23</Code>
+		<Text>连斩</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong28</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>24</Code>
+		<Text>不会被暴击</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong29</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>25</Code>
+		<Text>不会被反击</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong30</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>26</Code>
+		<Text>保护同伴</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong31</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>29</Code>
+		<Text>无限反击</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong32</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>30</Code>
+		<Text>模仿敌人招式反击</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong33</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>31</Code>
+		<Text>免疫中毒</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong34</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>32</Code>
+		<Text>降低伤害</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong35</Id>
+		<ParentId>BattleNeigong9</ParentId>
+		<Column>EffectType</Column>
+		<Code>33</Code>
+		<Text>免疫眩晕</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong36</Id>
+		<ParentId>Base</ParentId>
+		<Column>Accumulate</Column>
+		<Code>Accumulate</Code>
+		<Text>作用方式</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong37</Id>
+		<ParentId>BattleNeigong36</ParentId>
+		<Column>Accumulate</Column>
+		<Code>0</Code>
+		<Text>数值型自身</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong38</Id>
+		<ParentId>BattleNeigong36</ParentId>
+		<Column>Accumulate</Column>
+		<Code>1</Code>
+		<Text>累积型自身</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong39</Id>
+		<ParentId>BattleNeigong36</ParentId>
+		<Column>Accumulate</Column>
+		<Code>4</Code>
+		<Text>效果型自身</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong40</Id>
+		<ParentId>BattleNeigong36</ParentId>
+		<Column>Accumulate</Column>
+		<Code>5</Code>
+		<Text>友军</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong41</Id>
+		<ParentId>BattleNeigong36</ParentId>
+		<Column>Accumulate</Column>
+		<Code>7</Code>
+		<Text>触发</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong42</Id>
+		<ParentId>BattleNeigong36</ParentId>
+		<Column>Accumulate</Column>
+		<Code>9</Code>
+		<Text>敌军</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong43</Id>
+		<ParentId>BattleNeigong36</ParentId>
+		<Column>Accumulate</Column>
+		<Code>10</Code>
+		<Text>低于或高于触发</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong44</Id>
+		<ParentId>Base</ParentId>
+		<Column>Percent</Column>
+		<Code>Percent</Code>
+		<Text>是否百分比</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong45</Id>
+		<ParentId>Base</ParentId>
+		<Column>Value1</Column>
+		<Code>Value1</Code>
+		<Text>数值1</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong46</Id>
+		<ParentId>Base</ParentId>
+		<Column>Value2</Column>
+		<Code>Value2</Code>
+		<Text>数值2</Text>
+		<Remark> </Remark>
+	</Annotation>
+	<Annotation>
+		<Id>BattleNeigong47</Id>
+		<ParentId>Base</ParentId>
+		<Column>ValueLimit</Column>
+		<Code>ValueLimit</Code>
+		<Text>数值上限</Text>
+		<Remark> </Remark>
 	</Annotation>
 </ArrayOfAnnotation>

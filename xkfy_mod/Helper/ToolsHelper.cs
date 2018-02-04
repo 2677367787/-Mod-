@@ -4,9 +4,11 @@ using System.Data;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using xkfy_mod.Data;
 using xkfy_mod.Entity;
+using xkfy_mod.Utils;
 using xkfy_mod.XML;
 
 namespace xkfy_mod.Helper
@@ -458,7 +460,7 @@ namespace xkfy_mod.Helper
 
             foreach (DataRow item in row)
             {
-                string Explain = "";
+                string explain = "";
                 string tempExplain = string.Empty;
                 string strAccumulate = string.Empty;
 
@@ -466,27 +468,23 @@ namespace xkfy_mod.Helper
                 string effectType = item["EffectType"].ToString();
                 string value1 = item["value1"].ToString();
                 string value2 = item["value2"].ToString();
+                string percent = item["percent"].ToString() == "1" ? "%":"点";
+
+                var lists = FileUtils.ReadConfig<Annotation>(PathHelper.GetExplicatePath("BattleNeigong"));
+
+                var result = lists.Where(l => l.Column == "Accumulate" && l.Code == accumulate).ToList();
+
 
                 //通过key从Dictionary读取出对应的Value
                 tempExplain = DataHelper.DropDownListDict[Const.BaNeEffecttype].ContainsKey(effectType)
                     ? DataHelper.DropDownListDict[Const.BaNeEffecttype][effectType]
                     : "";
 
-                //通过key从Dictionary读取出对应的Value
-//                if (DataHelper.SelItem["Accumulate"].ContainsKey(item["Accumulate"].ToString()))
-//                    tempExplain1 = DataHelper.SelItem["Accumulate"][item["Accumulate"].ToString()];
-//                else
-//                    tempExplain1 = "";
-
                 //如果前四项为0，代表没有效果
                 if (effectType == "" || (effectType == "0" && accumulate == "0" && value1 == "0" && value2 == "0"))
                 {
                     continue;
-                }
-                string percent = "点";
-                if (item["percent"].ToString() == "1")
-                    percent = "%";
-
+                } 
 
                 string conditionId = "";
                 switch (accumulate)
@@ -529,7 +527,7 @@ namespace xkfy_mod.Helper
                     case "0":
                     case "1":
                         strAccumulate = "每回合恢复";
-                        Explain = strAccumulate + item["value1"].ToString() + percent + "【" + tempExplain + "】  最多" +
+                        explain = strAccumulate + item["value1"].ToString() + percent + "【" + tempExplain + "】  最多" +
                                   item["ValueLimit"].ToString() + percent;
                         break;
                     case "3":
@@ -537,45 +535,47 @@ namespace xkfy_mod.Helper
                     case "5":
                     case "6":
                     case "7":
+                    case "8":
                         if (accumulate == "5")
                         {
-                            Explain = strAccumulate;
+                            explain = strAccumulate;
                             break;
                         }
-                        Explain = strAccumulate + item["value1"] + percent + "【" + tempExplain + "】  最多" +
+                        explain = strAccumulate + item["value1"] + percent + "【" + tempExplain + "】  最多" +
                                   item["ValueLimit"].ToString() + percent;
                         break;
-                    case "8":
+                    case "10":
                     case "24":
                     case "25":
                     case "29":
                     case "30":
-                        Explain = $"【{tempExplain}】";
+                    case "33":
+                        explain = $"【{tempExplain}】";
                         break;
                     case "9":
-                        Explain = "移动范围 +" + item["ValueLimit"].ToString() + "";
+                        explain = "移动范围 +" + item["ValueLimit"].ToString() + "";
                         break;
                     case "15":
                     case "16":
                     case "17":
                     case "18":
-                        Explain = $"【{tempExplain}】{value1}{percent}  最多{item["ValueLimit"]}{percent}";
+                        explain = $"【{tempExplain}】{value1}{percent}  最多{item["ValueLimit"]}{percent}";
                         break;
                     case "20":
-                        Explain = $"每回合解除【{tempa}】负面状态";
+                        explain = $"每回合解除【{tempa}】负面状态";
                         break;
                     case "22":
-                        Explain = $"行动等级 +{item["ValueLimit"].ToString()} 神行";
+                        explain = $"行动等级 +{item["ValueLimit"].ToString()} 神行";
                         break;
                     case "23":
-                        Explain = "连斩：击杀敌人後可再行动";
+                        explain = "连斩：击杀敌人後可再行动";
                         break;
                     case "26":
                         strAccumulate = $"保护周遭{item["ValueLimit"].ToString()}格同伴";
                         sbExplain.Append(strAccumulate);
                         break;
                     case "31":
-                        Explain = "毒体：百毒不侵";
+                        explain = "毒体：百毒不侵";
                         break;
                     case "32":
                         sbExplain.AppendFormat("减少{0}{1} - {2}{3}伤害", value1, percent, value2, percent);
@@ -585,7 +585,7 @@ namespace xkfy_mod.Helper
                         break;
 
                 }
-                sbExplain.Append(Explain);
+                sbExplain.Append(explain);
                 sbExplain.Append("\r\n");
             }
             return sbExplain.ToString();
@@ -1051,7 +1051,16 @@ namespace xkfy_mod.Helper
             OpenRadioForm("String_table", row, id, name);
         }
 
-
+        /// <summary>
+        /// 奖励专用弹出窗口
+        /// </summary> 
+        /// <param name="textId">显示ID的TextBox</param>
+        /// <param name="textValue">显示编译值的TextBox</param>
+        /// <param name="selType">radio单选</param>
+        public static void OpenRewardData(TextBox textId, TextBox textValue, Const.OpenType selType)
+        {
+            OpenChooseForm(Const.RewardData, Const.RewardDataRow, textId, textValue,selType);
+        } 
 
         /// <summary>
         /// Buff专用弹出窗口
@@ -1154,7 +1163,7 @@ namespace xkfy_mod.Helper
         /// <param name="row">需要显示的列</param>
         public static void OpenMultiForm(string tbName, string[] row, TextBox txtId, TextBox txtName)
         {
-            OpenChooseForm(tbName, row, txtId, txtName, "2");
+            OpenChooseForm(tbName, row, txtId, txtName, Const.OpenType.Mulit);
         }
 
         /// <summary>
@@ -1166,7 +1175,7 @@ namespace xkfy_mod.Helper
         /// <param name="row">需要显示的列</param>
         public static void OpenRadioForm(string tbName, string[] row, TextBox txtId, TextBox txtName)
         {
-            OpenChooseForm(tbName, row, txtId, txtName,  "1"); 
+            OpenChooseForm(tbName, row, txtId, txtName, Const.OpenType.Radio); 
         }
 
         /// <summary>
@@ -1177,7 +1186,7 @@ namespace xkfy_mod.Helper
         /// <param name="txtName">显示编译值的TextBox</param>
         /// <param name="row">需要显示的列</param>
         /// <param name="selType">1 radio 单选,2 Multi 多选</param>
-        public static void OpenChooseForm(string tbName, string[] row, TextBox txtId, TextBox txtName, string selType)
+        public static void OpenChooseForm(string tbName, string[] row, TextBox txtId, TextBox txtName, Const.OpenType selType)
         {
             ChooseData cd = new ChooseData()
             {

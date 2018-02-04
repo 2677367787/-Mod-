@@ -30,11 +30,15 @@
 	</DicConfig>
 	<DicConfig>
 		<Key>8</Key>
-		<Value>攻击必中</Value>
+		<Value>命中</Value>
 	</DicConfig>
 	<DicConfig>
 		<Key>9</Key>
 		<Value>移动力</Value>
+	</DicConfig>
+	<DicConfig>
+		<Key>10</Key>
+		<Value>免疫内伤</Value>
 	</DicConfig>
 	<DicConfig>
 		<Key>15</Key>
@@ -54,7 +58,7 @@
 	</DicConfig>
 	<DicConfig>
 		<Key>19</Key>
-		<Value>19</Value>
+		<Value>作用不明</Value>
 	</DicConfig>
 	<DicConfig>
 		<Key>20</Key>
@@ -95,5 +99,9 @@
 	<DicConfig>
 		<Key>32</Key>
 		<Value>降低伤害</Value>
+	</DicConfig>
+	<DicConfig>
+		<Key>33</Key>
+		<Value>免疫眩晕</Value>
 	</DicConfig>
 </ArrayOfDicConfig>

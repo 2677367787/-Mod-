@@ -104,7 +104,11 @@ namespace xkfy_mod.Data
         #endregion
 
         /// <summary>
-        /// BattleCondition.txt
+        /// RewardDataRow.txt
+        /// </summary>
+        public static readonly string[] RewardDataRow = { "iRID", "sRewardData"};
+        /// <summary>
+        /// BattleConditionRow.txt
         /// </summary>
         public static readonly string[] BattleConditionRow = { "ConditionID", "CondName", "CondDesc" };
 

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNeiGong));
             this.cboEffectType1 = new System.Windows.Forms.ComboBox();
             this.cboAccumulate = new System.Windows.Forms.ComboBox();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNeiGong));
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,14 +50,12 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.cbosIcon1 = new System.Windows.Forms.ComboBox();
             this.cbosCIcon1 = new System.Windows.Forms.ComboBox();
-            
             this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lblValue1 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-   
             this.rdoPercentA = new System.Windows.Forms.RadioButton();
             this.rdoPercentB = new System.Windows.Forms.RadioButton();
-            this.label13 = new System.Windows.Forms.Label();
+            this.lblValue2 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.txtValue2 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -80,6 +78,28 @@
             this.gbJiBenInfo.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // cboEffectType1
+            // 
+            this.cboEffectType1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEffectType1.FormattingEnabled = true;
+            this.cboEffectType1.Location = new System.Drawing.Point(147, 24);
+            this.cboEffectType1.Name = "cboEffectType1";
+            this.cboEffectType1.Size = new System.Drawing.Size(119, 20);
+            this.cboEffectType1.TabIndex = 8;
+            this.cboEffectType1.Tag = "EffectType";
+            this.cboEffectType1.SelectedIndexChanged += new System.EventHandler(this.cboEffectType1_SelectedIndexChanged);
+            // 
+            // cboAccumulate
+            // 
+            this.cboAccumulate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboAccumulate.FormattingEnabled = true;
+            this.cboAccumulate.Location = new System.Drawing.Point(147, 61);
+            this.cboAccumulate.Name = "cboAccumulate";
+            this.cboAccumulate.Size = new System.Drawing.Size(119, 20);
+            this.cboAccumulate.TabIndex = 9;
+            this.cboAccumulate.Tag = "Accumulate";
+            this.cboAccumulate.SelectedIndexChanged += new System.EventHandler(this.cboAccumulate_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -265,17 +285,6 @@
             this.cbosCIcon1.TabIndex = 7;
             this.cbosCIcon1.Tag = "sCIcon1";
             // 
-            // cboEffectType1
-            // 
-            this.cboEffectType1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEffectType1.FormattingEnabled = true;
-            this.cboEffectType1.Location = new System.Drawing.Point(147, 24);
-            this.cboEffectType1.Name = "cboEffectType1";
-            this.cboEffectType1.Size = new System.Drawing.Size(119, 20);
-            this.cboEffectType1.TabIndex = 8;
-            this.cboEffectType1.Tag = "EffectType";
-            this.cboEffectType1.SelectedIndexChanged += new System.EventHandler(this.cboEffectType1_SelectedIndexChanged);
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -285,14 +294,14 @@
             this.label16.TabIndex = 36;
             this.label16.Text = "Percent【是否百分比】";
             // 
-            // label17
+            // lblValue1
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(290, 28);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(83, 12);
-            this.label17.TabIndex = 37;
-            this.label17.Text = "value1【值1】";
+            this.lblValue1.AutoSize = true;
+            this.lblValue1.Location = new System.Drawing.Point(290, 28);
+            this.lblValue1.Name = "lblValue1";
+            this.lblValue1.Size = new System.Drawing.Size(83, 12);
+            this.lblValue1.TabIndex = 37;
+            this.lblValue1.Text = "value1【值1】";
             // 
             // label18
             // 
@@ -302,17 +311,6 @@
             this.label18.Size = new System.Drawing.Size(137, 12);
             this.label18.TabIndex = 38;
             this.label18.Text = "Accumulate【生效方式】";
-            // 
-            // cboAccumulate
-            // 
-            this.cboAccumulate.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboAccumulate.FormattingEnabled = true;
-            this.cboAccumulate.Location = new System.Drawing.Point(147, 61);
-            this.cboAccumulate.Name = "cboAccumulate";
-            this.cboAccumulate.Size = new System.Drawing.Size(119, 20);
-            this.cboAccumulate.TabIndex = 9;
-            this.cboAccumulate.Tag = "Accumulate";
-            this.cboAccumulate.SelectedIndexChanged += new System.EventHandler(this.cboAccumulate_SelectedIndexChanged);
             // 
             // rdoPercentA
             // 
@@ -339,14 +337,14 @@
             this.rdoPercentB.Text = "否[0]";
             this.rdoPercentB.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // lblValue2
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(290, 65);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(83, 12);
-            this.label13.TabIndex = 42;
-            this.label13.Text = "value2【值2】";
+            this.lblValue2.AutoSize = true;
+            this.lblValue2.Location = new System.Drawing.Point(290, 65);
+            this.lblValue2.Name = "lblValue2";
+            this.lblValue2.Size = new System.Drawing.Size(83, 12);
+            this.lblValue2.TabIndex = 42;
+            this.lblValue2.Text = "value2【值2】";
             // 
             // label14
             // 
@@ -380,13 +378,13 @@
             this.groupBox1.Controls.Add(this.txtValue2);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtValue1);
-            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.lblValue2);
             this.groupBox1.Controls.Add(this.rdoPercentB);
             this.groupBox1.Controls.Add(this.cboEffectType1);
             this.groupBox1.Controls.Add(this.rdoPercentA);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.cboAccumulate);
-            this.groupBox1.Controls.Add(this.label17);
+            this.groupBox1.Controls.Add(this.lblValue1);
             this.groupBox1.Controls.Add(this.btnSaveXg);
             this.groupBox1.Controls.Add(this.btnAddXg);
             this.groupBox1.Location = new System.Drawing.Point(15, 168);
@@ -600,12 +598,12 @@
         private System.Windows.Forms.ComboBox cbosCIcon1;
         private System.Windows.Forms.ComboBox cboEffectType1;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lblValue1;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.ComboBox cboAccumulate;
         private System.Windows.Forms.RadioButton rdoPercentA;
         private System.Windows.Forms.RadioButton rdoPercentB;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblValue2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtValue2;
         private System.Windows.Forms.GroupBox groupBox1;

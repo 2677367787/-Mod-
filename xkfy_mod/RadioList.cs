@@ -2,6 +2,7 @@
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
+using xkfy_mod.Data;
 using xkfy_mod.Entity;
 using xkfy_mod.Helper;
 
@@ -10,10 +11,6 @@ namespace xkfy_mod
     public partial class RadioList : Form
     {　
         private readonly ChooseData _cd; 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="cd"></param> 
         public RadioList(ChooseData cd)
         {
             _cd = cd;
@@ -22,7 +19,7 @@ namespace xkfy_mod
 
         private void RadioList_Load(object sender, EventArgs e)
         {
-            if (_cd.SelType == "2")
+            if (_cd.SelType == Const.OpenType.Mulit)
                 btnOK.Visible = true;
             label1.Text = _cd.Row[0];
             label2.Text = _cd.Row[1];
@@ -55,24 +52,28 @@ namespace xkfy_mod
                 id = ",";
             if (!string.IsNullOrEmpty(_cd.TextId.Text))
                 name = ",";
-            id += this.dg1.CurrentRow.Cells[0].Value.ToString();
-            name += this.dg1.CurrentRow.Cells[1].Value.ToString();
+            var dataGridViewRow = dg1.CurrentRow;
+            if (dataGridViewRow != null)
+            {
+                id += dataGridViewRow.Cells[0].Value.ToString();
+                name += dataGridViewRow.Cells[1].Value.ToString();
 
-            if (_cd.SelType == "2")
-            {
-                if (_cd.TextId != null)
-                    _cd.TextId.Text += id;
-                if (_cd.TextName != null)
-                    _cd.TextName.Text += name;
+                if (_cd.SelType == Const.OpenType.Mulit)
+                {
+                    if (_cd.TextId != null)
+                        _cd.TextId.Text += id;
+                    if (_cd.TextName != null)
+                        _cd.TextName.Text += name;
+                }
+                else
+                {
+                    if (_cd.TextId != null)
+                        _cd.TextId.Text = dataGridViewRow.Cells[0].Value.ToString();
+                    if (_cd.TextName != null)
+                        _cd.TextName.Text = dataGridViewRow.Cells[1].Value.ToString();
+                }
             }
-            else
-            {
-                if (_cd.TextId != null)
-                    _cd.TextId.Text = this.dg1.CurrentRow.Cells[0].Value.ToString(); ;
-                if (_cd.TextName != null)
-                    _cd.TextName.Text = this.dg1.CurrentRow.Cells[1].Value.ToString(); ;
-            }
-            this.Close();
+            Close();
         }
 
         private void btnQuery_Click(object sender, EventArgs e)
@@ -90,8 +91,11 @@ namespace xkfy_mod
                 where += " and " + textBox2.Tag + " like '%" + name + "%' ";
             }
             DataView dv = dg1.DataSource as DataView;
-            dv.RowFilter = where;
-            this.dg1.DataSource = dv;
+            if (dv != null)
+            {
+                dv.RowFilter = @where;
+                dg1.DataSource = dv;
+            }
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -109,10 +113,10 @@ namespace xkfy_mod
                 name += row.Cells[1].Value + ",";
             }
             if(_cd.TextId != null)
-                _cd.TextId.Text += id.TrimEnd(new char[] { ',' });
+                _cd.TextId.Text += id.TrimEnd(',');
 
             if (_cd.TextName != null)
-                _cd.TextName.Text += name.TrimEnd(new char[] { ',' });
+                _cd.TextName.Text += name.TrimEnd(',');
             Close();
         }
     }

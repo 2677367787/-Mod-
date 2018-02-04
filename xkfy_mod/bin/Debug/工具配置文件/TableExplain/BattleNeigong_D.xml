@@ -16,6 +16,7 @@
 		<Width>0</Width>
 		<Height>0</Height>
 		<IsDropDownList>1</IsDropDownList>
+		<DataKey>BattleNeigong.Effecttype</DataKey>
 		<DataSourcePath>CustomData/下拉框配置文件/BattleNeigong.Effecttype.效果类型.xml</DataSourcePath>
 	</TableExplain>
 	<TableExplain>
@@ -26,6 +27,7 @@
 		<Width>0</Width>
 		<Height>0</Height>
 		<IsDropDownList>1</IsDropDownList>
+		<DataKey>BattleNeigong.Accumulate</DataKey>
 		<DataSourcePath>CustomData/下拉框配置文件/BattleNeigong.Accumulate.作用方式.xml</DataSourcePath>
 	</TableExplain>
 	<TableExplain>
@@ -35,7 +37,7 @@
 		<IsSelColumn>0</IsSelColumn>
 		<Width>0</Width>
 		<Height>0</Height>
-		<IsDropDownList>1</IsDropDownList>
+		<IsDropDownList>0</IsDropDownList>
 		<DataSourcePath>CustomData/下拉框配置文件/BattleNeigong是否百分比.xml</DataSourcePath>
 	</TableExplain>
 	<TableExplain>

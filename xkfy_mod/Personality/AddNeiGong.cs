@@ -209,12 +209,17 @@ namespace xkfy_mod.Personality
 
         private void cboAccumulate_SelectedIndexChanged(object sender, EventArgs e)
         {
+            lblValue2.Text = @"value2【值2】";
+            lblValue1.Text = @"value1【值1】";
             if (cboAccumulate.SelectedValue.ToString() == "7" || cboAccumulate.SelectedValue.ToString() == "10")
             {
                 btnSelBattleCondition.Visible = true;
                 btnSelBattleCondition2.Visible = true;
                 txtXgName.Visible = true;
                 txtXgName2.Visible = true;
+                if (cboAccumulate.SelectedValue.ToString() != "10") return;
+                lblValue2.Text = @"高于触发";
+                lblValue1.Text = @"低于触发";
             }
             else
             {
@@ -293,13 +298,13 @@ namespace xkfy_mod.Personality
         private void 招式效果ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmSetCbo fs = new FrmSetCbo(cboEffectType1, PathHelper.EffecttypePath);
-            fs.Show();
+            fs.ShowDialog();
         }
 
         private void 生效方式ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmSetCbo fs = new FrmSetCbo(cboAccumulate, PathHelper.AccumulatePath);
-            fs.Show();
+            fs.ShowDialog();
         }
     }
 }

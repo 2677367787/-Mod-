@@ -305,6 +305,8 @@ namespace xkfy_mod
             if (activeDocument?.Tag == null)
                 return;
             string tbName = activeDocument.Tag.ToString();
+            DialogResult dr = MessageBox.Show($"请确认是否放弃对文件[{tbName}]的所有修改，并重新加载当前文件内容", @"提示信息", MessageBoxButtons.OKCancel);
+            if (dr != DialogResult.OK) return;
             DataHelper.XkfyData.Tables.Remove(tbName);
             if (DataHelper.FormConfig[tbName].DtType == "1")
             {
@@ -477,20 +479,26 @@ namespace xkfy_mod
 
         private void 测试ToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            FormData fd = new FormData()
+            {
+                TableName = "BattleNeigong"
+            };
+            FrmAnnotation fa = new FrmAnnotation(fd);
+            fa.Show();
 //            FormData fd = new FormData()
 //            {
 //                TableName = "BattleNeigong"
 //            };
-            FileUtils.GetCurrFolderFile(PathHelper.ModFoderPath, DataHelper.DictModFiles);
-            IList<MyConfig> list = FileHelper.ReadTableConfig();
-            //循环所有表配置
-            foreach (MyConfig item in list)
-            {
-                if(item.MainDtName.ToUpper() == "MAP") return;
-                //DataHelper.FormConfig.Add(item.MainDtName, item);
-                FileHelper.LoadTable(item.MainDtName);
-                FileHelper.Distinguish(item.MainDtName);
-            }
+//            FileUtils.GetCurrFolderFile(PathHelper.ModFoderPath, DataHelper.DictModFiles);
+//            IList<MyConfig> list = FileHelper.ReadTableConfig();
+//            //循环所有表配置
+//            foreach (MyConfig item in list)
+//            {
+//                if(item.MainDtName.ToUpper() == "MAP") return;
+//                //DataHelper.FormConfig.Add(item.MainDtName, item);
+//                FileHelper.LoadTable(item.MainDtName);
+//                FileHelper.Distinguish(item.MainDtName);
+//            }
 //            FrmAnnotation at = new FrmAnnotation(fd);
 //            at.Show();
         }

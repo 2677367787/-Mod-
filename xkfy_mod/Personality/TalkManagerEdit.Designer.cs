@@ -35,7 +35,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtsManager = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -242,14 +242,14 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "iNpcID【说话NPC】";
             // 
-            // textBox4
+            // txtsManager
             // 
-            this.textBox4.Location = new System.Drawing.Point(4, 7);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(247, 89);
-            this.textBox4.TabIndex = 7;
-            this.textBox4.Tag = "sManager";
+            this.txtsManager.Location = new System.Drawing.Point(4, 7);
+            this.txtsManager.Multiline = true;
+            this.txtsManager.Name = "txtsManager";
+            this.txtsManager.Size = new System.Drawing.Size(247, 89);
+            this.txtsManager.TabIndex = 7;
+            this.txtsManager.Tag = "sManager";
             // 
             // textBox5
             // 
@@ -1333,7 +1333,7 @@
             // 
             // txtIndexSn
             // 
-            this.txtIndexSn.Location = new System.Drawing.Point(317, 8);
+            this.txtIndexSn.Location = new System.Drawing.Point(945, 297);
             this.txtIndexSn.Name = "txtIndexSn";
             this.txtIndexSn.Size = new System.Drawing.Size(35, 21);
             this.txtIndexSn.TabIndex = 158;
@@ -1504,7 +1504,6 @@
             this.plTalkGroup.Controls.Add(this.label36);
             this.plTalkGroup.Controls.Add(this.btnSaveGroup);
             this.plTalkGroup.Controls.Add(this.lblOrder);
-            this.plTalkGroup.Controls.Add(this.txtIndexSn);
             this.plTalkGroup.Controls.Add(this.label67);
             this.plTalkGroup.Controls.Add(this.btnPre);
             this.plTalkGroup.Controls.Add(this.btnNext);
@@ -1604,7 +1603,7 @@
             // 
             this.panelTalk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTalk.BackgroundImage")));
             this.panelTalk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelTalk.Controls.Add(this.textBox4);
+            this.panelTalk.Controls.Add(this.txtsManager);
             this.panelTalk.Location = new System.Drawing.Point(367, 290);
             this.panelTalk.Name = "panelTalk";
             this.panelTalk.Size = new System.Drawing.Size(255, 118);
@@ -1648,8 +1647,8 @@
             this.Controls.Add(this.panelTalk);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnTemplate);
-            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.textBox51);
+            this.Controls.Add(this.txtIndexSn);
             this.Controls.Add(this.textBox52);
             this.Controls.Add(this.textBox53);
             this.Controls.Add(this.sNpcQName8);
@@ -1716,6 +1715,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.label34);
+            this.Controls.Add(this.btnUpdate);
             this.Name = "TalkManagerEdit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "TalkManager_Edit";
@@ -1749,7 +1749,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtsManager;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox6;

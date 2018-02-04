@@ -57,7 +57,7 @@ namespace xkfy_mod
                     {
                         btnDebug.Visible = true;
                     }
-                    else if (_configKey == Const.TalkManager)
+                    else if (_configKey == Const.TalkManager || _configKey == Const.MapTalkManager)
                     {
                         btnEditTalkGroup.Visible = true;
                     }
@@ -380,8 +380,18 @@ namespace xkfy_mod
                 if (t == null) return;
                 Form form;
                 if (type == "EditGroup")
-                { 
-                    DataRow[] talkGroupRows = DataHelper.XkfyData.Tables[_tbName].Select($"iQGroupID='{dr.Cells["iQGroupID"].Value}'");
+                {
+                    if(dr == null) return;
+                    DataRow[] talkGroupRows = null;
+                    switch (_tbName)
+                    {
+                        case Const.TalkManager:
+                            talkGroupRows = DataHelper.XkfyData.Tables[_tbName].Select($"iQGroupID='{dr.Cells["iQGroupID"].Value}'","indexSn Asc");
+                            break;
+                        case Const.MapTalkManager:
+                            talkGroupRows = DataHelper.XkfyData.Tables[_tbName].Select($"sGroupID='{dr.Cells["sGroupID"].Value}'", "indexSn Asc");
+                            break;
+                    } 
                     form = (Form)Activator.CreateInstance(t, talkGroupRows, type); 
                 }
                 else
