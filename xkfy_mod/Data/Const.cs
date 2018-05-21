@@ -7,10 +7,6 @@
 ** 创建日期：2017/12/23 14:13:45
 ** 修改记录： 
 *****************************************************/
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using xkfy_mod.Entity;
 
 namespace xkfy_mod.Data

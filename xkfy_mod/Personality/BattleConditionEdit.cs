@@ -36,6 +36,11 @@ namespace xkfy_mod.Personality
                 SetdgXiaoGuo();
             }
             dgXiaoGuo.DataSource = _conditionD;
+            if (_conditionD.Rows.Count > 0)
+            {
+                dgXiaoGuo.Rows[0].Selected = true;
+                dgXiaoGuo_CellClick(null,null);
+            }
         }
 
         #region 绑定内功效果的DataTable的值到页面控件上
@@ -187,14 +192,14 @@ namespace xkfy_mod.Personality
             {
                 txtXgName.Visible = true;
                 btnSelBattleCondition.Visible = true;
-                ExplainHelper.GetConditionName(txtValue1.Text);
+                txtXgName.Text = ExplainHelper.GetConditionName(txtValue1.Text);
             }
 
             if (txtValue2.Text.Length > 5)
             {
-                txtXgName.Visible = true;
+                txtXgName2.Visible = true;
                 btnSelBattleCondition2.Visible = true;
-                ExplainHelper.GetConditionName(txtValue2.Text);
+                txtXgName2.Text = ExplainHelper.GetConditionName(txtValue2.Text);
             }
             lblMsg.Text = $"当前修改第{_dgvDrc.Index + 1}行数据";
         }

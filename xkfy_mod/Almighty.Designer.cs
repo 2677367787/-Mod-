@@ -348,6 +348,7 @@
             this.indexSn.DataPropertyName = "indexSn";
             this.indexSn.HeaderText = "工具排序用";
             this.indexSn.Name = "indexSn";
+            this.indexSn.Visible = false;
             this.indexSn.Width = 60;
             // 
             // rowState
@@ -355,6 +356,7 @@
             this.rowState.DataPropertyName = "rowState";
             this.rowState.HeaderText = "rowState";
             this.rowState.Name = "rowState";
+            this.rowState.Visible = false;
             // 
             // Almighty
             // 

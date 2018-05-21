@@ -445,6 +445,31 @@ namespace xkfy_mod
             if (dv?.Cells[1].Value == null)
                 return;
             DataTable dt = DataHelper.DdlDataSet.Tables["TalkManager.iGtype"];
+            StringBuilder explainText = new StringBuilder();
+            switch (_configKey)
+            {
+                case "Map":
+
+                    string npcId = dv.Cells["iNpcID"].Value.ToString();
+                    explainText.Append(ExplainHelper.GetNpcName(npcId.Substring(0, npcId.Length - 3)));
+                    explainText.Append("\r\n");
+                    explainText.Append("点击对话：");
+                    explainText.Append("\r\n");
+                    explainText.Append(ExplainHelper.GetMapTalkManager(dv.Cells["sDialogueQID"].Value.ToString()));
+                    explainText.Append("\r\n");
+                    explainText.Append("NPC移动时对话：");
+                    explainText.Append("\r\n");
+                    explainText.Append(ExplainHelper.GetMapTalkManager(dv.Cells["sMobileQID"].Value.ToString()));
+                    txtExplain.Text = explainText.ToString();
+                    break; 
+                case "NpcConduct":
+                    string[] tmp = dv.Cells["sConduct"].Value.ToString().Replace("(", "").Replace(")", "").Split(',');
+                    if (tmp.Length == 4)
+                    {
+                        txtExplain.Text = ExplainHelper.GetNpcName(tmp[3].Substring(0, tmp[3].Length - 3));
+                    }
+                    break;
+            }
             switch (_tbName)
             {
                 case "DevelopQuestData": 
@@ -453,7 +478,7 @@ namespace xkfy_mod
                     string[] striArg2 = dv.Cells["iArg2"].Value.ToString().Split(',');
                     string[] striCondition = dv.Cells["iCondition"].Value.ToString().Split(',');
                     string[] explain = tl.ExplainDevelopQuest(striCondition, striType, striArg1, striArg2);
-                    txtExplain.Text = explain[0] + "\r\n\r\n" + explain[1];
+                    txtExplain.Text = explain[0] + @"\r\n\r\n" + explain[1];
                     break;
                 //战斗奖励
                 case "RewardData":

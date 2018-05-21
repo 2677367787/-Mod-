@@ -12,7 +12,7 @@
 	<TableExplain>
 		<Column>sCoordinate</Column>
 		<Text />
-		<Explain />
+		<Explain>(x坐标,y坐标,z坐标,0,&lt;人物动作&gt;，90,0,1) 注意的是在unity的世界里 x,z是地平坐标，y才是高度坐标，别搞错了</Explain>
 		<IsSelColumn>0</IsSelColumn>
 		<Width>745</Width>
 		<Height>63</Height>
@@ -29,8 +29,8 @@
 	</TableExplain>
 	<TableExplain>
 		<Column>sSCondition</Column>
-		<Text />
-		<Explain />
+		<Text>任务脚本相关</Text>
+		<Explain>任务脚本相关，连接至QuestDataManager.txt，字面上是某种状态 这里的数据是 1,M00051035 是杜康村——村民一次性对话</Explain>
 		<IsSelColumn>0</IsSelColumn>
 		<Width>100</Width>
 		<Height>21</Height>
@@ -38,8 +38,6 @@
 	</TableExplain>
 	<TableExplain>
 		<Column>iMovieType</Column>
-		<Text />
-		<Explain />
 		<IsSelColumn>0</IsSelColumn>
 		<Width>100</Width>
 		<Height>21</Height>
@@ -47,8 +45,8 @@
 	</TableExplain>
 	<TableExplain>
 		<Column>sDialogueQID</Column>
-		<Text />
-		<Explain />
+		<Text>对话ID</Text>
+		<Explain>点击人物后的对话，连结至MapTalkManager.txt中的编号</Explain>
 		<IsSelColumn>0</IsSelColumn>
 		<Width>100</Width>
 		<Height>21</Height>
@@ -83,8 +81,8 @@
 	</TableExplain>
 	<TableExplain>
 		<Column>iStoreID</Column>
-		<Text />
-		<Explain />
+		<Text>打开商店</Text>
+		<Explain>打开商店</Explain>
 		<IsSelColumn>0</IsSelColumn>
 		<Width>100</Width>
 		<Height>21</Height>
@@ -92,8 +90,8 @@
 	</TableExplain>
 	<TableExplain>
 		<Column>iMaxTalk</Column>
-		<Text />
-		<Explain />
+		<Text>最大对话次数</Text>
+		<Explain>最大对话次数，0应为一直重复对话</Explain>
 		<IsSelColumn>0</IsSelColumn>
 		<Width>100</Width>
 		<Height>21</Height>

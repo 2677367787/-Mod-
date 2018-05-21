@@ -156,7 +156,7 @@ namespace xkfy_mod.Helper
 
         public static string GetNpcName(string id)
         {
-            return DataHelper.GetValue("NpcData", "sNpcName", "@iID", id);
+            return DataHelper.GetValue("NpcData", "sNpcName", "iID", id);
         }
         
         /// <summary>
@@ -221,7 +221,15 @@ namespace xkfy_mod.Helper
         /// <returns></returns>
         public static string GetMapTalkManager(string id)
         {
-            return DataHelper.GetValue("CharacterData", "Helper", "@CharID", id);
+            FileHelper.LoadTable(Const.MapTalkManager);
+            StringBuilder sb = new StringBuilder();
+            DataRow[] drs = DataHelper.XkfyData.Tables[Const.MapTalkManager].Select($"sGroupID='{id}'");
+            foreach (DataRow dr in drs)
+            {
+                sb.Append(dr["sManager"]);
+                sb.Append("\r\n");
+            } 
+            return sb.ToString();
         } 
     }
 }
