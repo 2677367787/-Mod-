@@ -78,10 +78,10 @@
             this.label36 = new System.Windows.Forms.Label();
             this.btnSaveGroup = new System.Windows.Forms.Button();
             this.lblOrder = new System.Windows.Forms.Label();
-            this.txtIndexSn = new System.Windows.Forms.TextBox();
             this.btnPre = new System.Windows.Forms.Button();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnInsTalk = new System.Windows.Forms.Button();
+            this.txtIndexSn = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -252,6 +252,7 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(100, 21);
             this.textBox10.TabIndex = 19;
+            this.textBox10.Tag = "sOpenUIID1";
             // 
             // label10
             // 
@@ -554,16 +555,6 @@
             this.lblOrder.TabIndex = 179;
             this.lblOrder.Text = "当前第：{0}条";
             // 
-            // txtIndexSn
-            // 
-            this.txtIndexSn.Location = new System.Drawing.Point(784, 47);
-            this.txtIndexSn.Name = "txtIndexSn";
-            this.txtIndexSn.Size = new System.Drawing.Size(100, 21);
-            this.txtIndexSn.TabIndex = 158;
-            this.txtIndexSn.Tag = "indexSn";
-            this.txtIndexSn.Text = "0";
-            this.txtIndexSn.Visible = false;
-            // 
             // btnPre
             // 
             this.btnPre.Location = new System.Drawing.Point(577, 6);
@@ -593,6 +584,16 @@
             this.btnInsTalk.Text = "复制新增";
             this.btnInsTalk.UseVisualStyleBackColor = true;
             this.btnInsTalk.Click += new System.EventHandler(this.btnInsTalk_Click);
+            // 
+            // txtIndexSn
+            // 
+            this.txtIndexSn.Location = new System.Drawing.Point(784, 47);
+            this.txtIndexSn.Name = "txtIndexSn";
+            this.txtIndexSn.Size = new System.Drawing.Size(100, 21);
+            this.txtIndexSn.TabIndex = 158;
+            this.txtIndexSn.Tag = "indexSn";
+            this.txtIndexSn.Text = "0";
+            this.txtIndexSn.Visible = false;
             // 
             // btnClose
             // 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
@@ -31,8 +32,9 @@ namespace xkfy_mod
                 IList<AppConfig> list = FileHelper.ReadAppConfig();
                 if (list.Count == 0)
                 {
-                    MessageBox.Show(@"你还没有新建过方案，请先新建方案！");
-                    return;
+                    AppConfig ac = new AppConfig() { CreatePath = "修改后的文件" };
+                    list = new List<AppConfig>() { ac };
+                    FileHelper.SaveAppConfig(list);
                 }
 
                 if (!string.IsNullOrEmpty(list[0].GameInstallPath))
@@ -43,7 +45,13 @@ namespace xkfy_mod
                 }
                 if (string.IsNullOrEmpty(list[0].CreatePath)) return;
                 ClearData();
-                
+
+                FileHelper.GetAllFolderFile(PathHelper.ModifyFolderPath, DataHelper.DictModFiles);
+                if (DataHelper.DictModFiles.Count == 0)
+                {
+                    InitFile();
+                }
+                DataHelper.DictModFiles.Clear();
                 Start(list[0].CreatePath);
             }
             catch (Exception ex)
@@ -513,20 +521,16 @@ namespace xkfy_mod
                     string path = PathHelper.AppConfigPath;
                     if (!File.Exists(path))
                     {
-                        MessageBox.Show(@"你还没有新建过方案，请先新建方案！");
-                        return;
+                        AppConfig ac = new AppConfig() { CreatePath = "修改后的文件" };
+                        IList<AppConfig> appConfigs = new List<AppConfig>() { ac };
+                        FileHelper.SaveAppConfig(appConfigs);
                     }
-                    var list = FileHelper.ReadAppConfig();
-
-                    list[0].CreatePath = PathHelper.ModifyFolderPath;
+                    //var list = FileHelper.ReadAppConfig();
+                    //list[0].CreatePath = PathHelper.ModifyFolderPath;
                     //保存Mod的路径，方便选择
-                    FileHelper.SaveAppConfig(list);
-
-                    FileUtils.DeleteDirectory(PathHelper.ModifyFolderPath);
-
-                    FileUtils.CopyFolderTo(PathHelper.ModFoderPath, PathHelper.ModifyFolderPath);
+                    //FileHelper.SaveAppConfig(list);
+                    InitFile();
                     ClearData();
-
                     Start(PathHelper.ModifyFolderPath);
                 }
             }
@@ -534,6 +538,12 @@ namespace xkfy_mod
             {
                 MessageBox.Show(@"发生未知异常,请手动复制工具目录【原始文件】文件夹里所有内容\r\n放入【修改后的文件】然后重启工具即可");
             }
+        }
+
+        private void InitFile()
+        {
+            FileUtils.DeleteDirectory(PathHelper.ModifyFolderPath);
+            FileUtils.CopyFolderTo(PathHelper.ModFoderPath, PathHelper.ModifyFolderPath);
         }
 
         private void 回合信息ToolStripMenuItem_Click(object sender, EventArgs e)

@@ -209,7 +209,8 @@ namespace xkfy_mod.Helper
                     ComboBox com = ((ComboBox)control);
                     if (com.DropDownStyle == ComboBoxStyle.DropDown)
                     {
-                        dr[rowName] = com.Text;
+                        string text = StringUtils.GetRdoValue(com.Text);
+                        dr[rowName] = text == "" ? com.Text : text;
                     }
                     else
                     {
@@ -260,8 +261,9 @@ namespace xkfy_mod.Helper
                     //判断下拉框样式，如果是可选可输入，绑定文本框
                     ComboBox com = ((ComboBox)control);
                     if (com.DropDownStyle == ComboBoxStyle.DropDown)
-                    {　
-                        dr.Cells[rowName].Value = com.Text;
+                    {
+                        string text = StringUtils.GetRdoValue(com.Text);
+                        dr.Cells[rowName].Value = text == ""? com.Text: text;
                     }
                     else
                     {
